@@ -5,6 +5,11 @@ import { Router } from "@reach/router";
 
 import HomePage from "./pages/Home";
 import RentalTypePage from "./pages/RentalType";
+import FormOfHousingPage from "./pages/FormOfHousing";
+import FactsAndFacilitiesPage from "./pages/FactsAndFacilities";
+import BathroomPage from "./pages/Bathroom";
+import KitchenPage from "./pages/Kitchen";
+import OutsidePage from "./pages/Outside";
 import "./App.css";
 
 const App = () => {
@@ -12,7 +17,12 @@ const App = () => {
     <div>
       <Router>
         <HomePage path="/" />
-        <RentalTypePage path="/rentalType" />
+        <RentalTypePage path="/rental-type" />
+        <FormOfHousingPage path="/form-of-housing" />
+        <FactsAndFacilitiesPage path="/facts-and-facilities" />
+        <BathroomPage path="/bathroom" />
+        <KitchenPage path="/kitchen" />
+        <OutsidePage path="/outside" />
       </Router>
     </div>
   );

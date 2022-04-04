@@ -1,0 +1,35 @@
+.outsideChoice {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+h1 {
+  width: 361px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  width: 396px;
+  margin-bottom: 32px;
+}
+
+input {
+  width: 25px;
+  height: 25px;
+}
+
+/* .helpButton {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 52px;
+      margin-top: 185px;
+    } */
+
+.pageNavigation {
+  display: flex;
+  justify-content: space-between;
+}
