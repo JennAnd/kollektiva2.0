@@ -11,14 +11,16 @@ const RentalTypePage = (props) => {
         Välj vilket typ av bostad du vill hyra ut. Du kan endast annonsera ett
         boende i taget.
       </p>
-      <RadioButton value="Villa"></RadioButton>
-      <RadioButton value="Hus"></RadioButton>
-      <RadioButton value="Radhus"></RadioButton>
-      <RadioButton value="Stuga"></RadioButton>
-      <RadioButton value="Parhus"></RadioButton>
-      <RadioButton value="Korridorsrum"></RadioButton>
-      <RadioButton value="Lägenheten"></RadioButton>
-      <RadioButton value="Loftgångshus"></RadioButton>
+      <form>
+        <RadioButton value="Villa" name="rentalType"></RadioButton>
+        <RadioButton value="Hus" name="rentalType"></RadioButton>
+        <RadioButton value="Radhus" name="rentalType"></RadioButton>
+        <RadioButton value="Stuga" name="rentalType"></RadioButton>
+        <RadioButton value="Parhus" name="rentalType"></RadioButton>
+        <RadioButton value="Korridorsrum" name="rentalType"></RadioButton>
+        <RadioButton value="Lägenheten" name="rentalType"></RadioButton>
+        <RadioButton value="Loftgångshus" name="rentalType"></RadioButton>
+      </form>
     </div>
   );
 };
