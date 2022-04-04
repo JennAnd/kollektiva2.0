@@ -8,7 +8,7 @@ const Card = ({ image, title, text, buttonText, bg }) => {
     <article className="card">
       <img src={image} alt="houseroof" />
       <div className="card-content">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{text}</p>
         <Button buttonText="Läs mer om att hyra ut din bostad" bg="white" />
       </div>
