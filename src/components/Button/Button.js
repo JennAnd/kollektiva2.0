@@ -11,6 +11,8 @@ const Button = (props) => {
         backgroundColor: props.bg,
         border: props.border,
         color: props.color,
+        icon: props.icon,
+
         /* width: props.width, */
       }}
     >
@@ -27,6 +29,7 @@ Button.propTypes = {
   handleClick: PropTypes.func,
   border: PropTypes.string,
   color: PropTypes.string,
+  icon: PropTypes.string,
   /* width:PropTypes.string, */
 };
 

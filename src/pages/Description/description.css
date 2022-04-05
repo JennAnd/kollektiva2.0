@@ -1,0 +1,26 @@
+.descriptionChoice {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+h1 {
+  width: 361px;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  width: 396px;
+  margin-bottom: 32px;
+}
+textarea {
+  border-radius: 8px;
+  border: 2px solid black;
+}
+.pageNavigation {
+  display: flex;
+  justify-content: space-between;
+}
