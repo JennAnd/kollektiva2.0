@@ -1,15 +1,17 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./rentalSize.css";
-import Button from "../../components/Button";
+import styles from "./RentalSize.module.css";
+import Button from "../../components/Button/Button";
 
 const RentalSizePage = (props) => {
   return (
-    <div class="rentalSizeChoice">
-      <h1>Ge en beskrivning</h1>
-      <p>Ge en generell beskrivning av bostaden och dess område.</p>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Ge en beskrivning</h1>
+      <p className={styles.text}>
+        Ge en generell beskrivning av bostaden och dess område.
+      </p>
       <form>
-        <p>Antal rum</p>
+        <p className={styles.text}>Antal rum</p>
         <select>
           <option value="size">1</option>
           <option value="size">2</option>
@@ -17,12 +19,12 @@ const RentalSizePage = (props) => {
           <option value="size">4</option>
           <option value="size">5</option>
         </select>
-        <div className="size">
-          <p>rum</p>
+        <div className={styles.size}>
+          <p className={styles.text}>rum</p>
         </div>
       </form>
       <form>
-        <p>Storlek</p>
+        <p className={styles.text}>Storlek</p>
         <select>
           <option value="size">22</option>
           <option value="size">23</option>
@@ -31,14 +33,11 @@ const RentalSizePage = (props) => {
           <option value="size">26</option>
         </select>
         <div>
-          <p>m&sup2;</p>
+          <p className={styles.text}>m&sup2;</p>
         </div>
       </form>
 
-      {/*  <div class="helpButton">
-        <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
-      </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/rental-address")}
           buttonText="Tillbaka"

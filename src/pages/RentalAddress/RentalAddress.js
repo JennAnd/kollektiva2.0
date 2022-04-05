@@ -1,13 +1,15 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./rentalAddress.css";
-import Button from "../../components/Button";
+import styles from "./RentalAddress.module.css";
+import Button from "../../components/Button/Button";
 
 const RentalAddressPage = (props) => {
   return (
-    <div class="rentalAddressChoice">
-      <h1>Bostadens adress</h1>
-      <p>Sök på din gatuadress eller skriv in den manuellt.</p>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Bostadens adress</h1>
+      <p className={styles.text}>
+        Sök på din gatuadress eller skriv in den manuellt.
+      </p>
       <form>
         <label for="address"></label>
         <svg
@@ -33,10 +35,7 @@ const RentalAddressPage = (props) => {
         <input type="text" id="address" />
       </form>
 
-      {/*  <div class="helpButton">
-        <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
-      </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button handleClick={() => navigate("/")} buttonText="Tillbaka" />
         <Button
           handleClick={() => navigate("/rental-size")}
