@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 /* import Button from "../../components/Button"; */
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/houseRoof.png";
+import Footer from "../../components/Footer/footer";
 
 const HomePage = (props) => {
   return (
@@ -26,6 +27,7 @@ const HomePage = (props) => {
         buttonText="Läs mer om att hyra en bostad"
         bg="white"
       ></Card>
+      <Footer />
     </div>
   );
 };
