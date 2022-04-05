@@ -1,13 +1,13 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./kitchen.css";
-import Button from "../../components/Button";
-import RadioButton from "./../../components/RadioButton";
+import styles from "./Kitchen.module.css";
+import Button from "../../components/Button/Button";
+import RadioButton from "../../components/RadioButton/RadioButton";
 
 const KitchenPage = (props) => {
   return (
-    <div class="kitchenChoice">
-      <h1>Kök</h1>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Kök</h1>
       <form>
         <RadioButton
           id="kitchen"
@@ -39,10 +39,7 @@ const KitchenPage = (props) => {
         ></RadioButton>
       </form>
 
-      {/* <div class="helpButton">
-        <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
-      </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/bathroom")}
           buttonText="Tillbaka"

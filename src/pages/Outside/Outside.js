@@ -1,13 +1,13 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./outside.css";
-import Button from "../../components/Button";
-import RadioButton from "./../../components/RadioButton";
+import styles from "./Outside.module.css";
+import Button from "../../components/Button/Button";
+import RadioButton from "../../components/RadioButton/RadioButton";
 
 const OutsidePage = (props) => {
   return (
-    <div class="outsideChoice">
-      <h1>Utomhus</h1>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Utomhus</h1>
       <form>
         <RadioButton id="outside" value="Balkong" name="outside"></RadioButton>
         <RadioButton id="outside" value="Trädgård" name="outside"></RadioButton>
@@ -17,7 +17,7 @@ const OutsidePage = (props) => {
       {/* <div class="helpButton">
         <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
       </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/kitchen")}
           buttonText="Tillbaka"

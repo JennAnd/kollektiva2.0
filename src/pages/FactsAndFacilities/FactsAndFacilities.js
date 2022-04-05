@@ -1,18 +1,18 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./factsAndFacilities.css";
-import Button from "../../components/Button";
-import RadioButton from "./../../components/RadioButton";
+import styles from "./FactsAndFacilities.module.css";
+import Button from "../../components/Button/Button";
+import RadioButton from "../../components/RadioButton/RadioButton";
 
 const FactsAndFacilitiesPage = (props) => {
   return (
-    <div class="factsAndFacilitiesChoice">
-      <h1>Fakta och faciliteter</h1>
-      <p>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Fakta och faciliteter</h1>
+      <p className={styles.text}>
         Specificera hur ditt boende ser ut. Fyll endast i det som finns
         tillgänligt för hyresgästen.
       </p>
-      <h2>Bekvämligheter</h2>
+      <h2 className={styles.subTitle}>Bekvämligheter</h2>
       <form>
         <RadioButton
           id="factsAndFacilities"
@@ -44,7 +44,7 @@ const FactsAndFacilitiesPage = (props) => {
       {/* <div class="helpButton">
         <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
       </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/upload-photos")}
           buttonText="Tillbaka"

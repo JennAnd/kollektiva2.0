@@ -1,12 +1,12 @@
 import React from "react";
+import styles from "./Button.module.css";
 import PropTypes from "prop-types";
-import "./button.css";
 
 const Button = (props) => {
   return (
     <button
       onClick={props.handleClick}
-      className="btn"
+      className={styles.btn}
       style={{
         backgroundColor: props.bg,
         border: props.border,

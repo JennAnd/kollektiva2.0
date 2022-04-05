@@ -1,13 +1,13 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./bathroom.css";
-import Button from "../../components/Button";
-import RadioButton from "./../../components/RadioButton";
+import styles from "./Bathroom.module.css";
+import Button from "../../components/Button/Button";
+import RadioButton from "../../components/RadioButton/RadioButton";
 
 const BathroomPage = (props) => {
   return (
-    <div class="bathroomChoice">
-      <h1>Badrum</h1>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Badrum</h1>
       <form>
         <RadioButton
           id="bathroom"
@@ -46,7 +46,7 @@ const BathroomPage = (props) => {
       {/* <div class="helpButton">
         <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
       </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/facts-and-facilities")}
           buttonText="Tillbaka"

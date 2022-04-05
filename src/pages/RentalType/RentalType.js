@@ -1,14 +1,14 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./rentalType.css";
-import Button from "../../components/Button";
-import RadioButton from "./../../components/RadioButton";
+import styles from "./RentalType.module.css";
+import Button from "../../components/Button/Button";
+import RadioButton from "../../components/RadioButton/RadioButton";
 
 const RentalTypePage = (props) => {
   return (
-    <div class="rentalTypeChoice">
-      <h1>Typ av bostad</h1>
-      <p>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Typ av bostad</h1>
+      <p className={styles.text}>
         Välj vilket typ av bostad du vill hyra ut. Du kan endast annonsera ett
         boende i taget.
       </p>
@@ -55,10 +55,7 @@ const RentalTypePage = (props) => {
         ></RadioButton>
       </form>
 
-      {/*  <div class="helpButton">
-        <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
-      </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/rental-size")}
           buttonText="Tillbaka"

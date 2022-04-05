@@ -1,4 +1,9 @@
-.input-box {
+input {
+  width: 25px;
+  height: 25px;
+}
+
+.inputBox {
   border-radius: 8px;
   border: 2px solid black;
   height: 58px;

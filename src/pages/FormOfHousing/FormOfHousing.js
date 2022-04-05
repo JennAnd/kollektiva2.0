@@ -1,14 +1,14 @@
 import React from "react";
 import { navigate } from "@reach/router";
-import "./formOfHousing.css";
-import Button from "../../components/Button";
-import RadioButton from "./../../components/RadioButton";
+import styles from "./FormOfHousing.module.css";
+import Button from "../../components/Button/Button";
+import RadioButton from "../../components/RadioButton/RadioButton";
 
 const FormOfHousingPage = (props) => {
   return (
-    <div class="formOfHousingChoice">
-      <h1>Boendeform</h1>
-      <p>Boendeform</p>
+    <div className={styles.choice}>
+      <h1 className={styles.title}>Boendeform</h1>
+      <p className={styles.text}>Boendeform</p>
       <form>
         <RadioButton
           id="formOfHousing"
@@ -30,7 +30,7 @@ const FormOfHousingPage = (props) => {
       {/*  <div class="helpButton">
         <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
       </div> */}
-      <div class="pageNavigation">
+      <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/rental-type")}
           buttonText="Tillbaka"

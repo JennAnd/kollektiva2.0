@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./card.css";
-import Button from "./../Button";
+import styles from "./Card.module.css";
+import Button from "../Button/Button";
 
 const Card = ({ image, title, text, buttonText, bg }) => {
   return (
-    <article className="card">
+    <article className={styles.card}>
       <img src={image} alt="houseroof" />
-      <div className="card-content">
-        <h2>{title}</h2>
-        <p>{text}</p>
+      <div className={styles.cardContent}>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.text}>{text}</p>
         <Button buttonText="Läs mer om att hyra ut din bostad" bg="white" />
       </div>
     </article>

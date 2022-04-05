@@ -1,14 +1,14 @@
 import React from "react";
-import "./home.css";
+import styles from "./Home.module.css";
 /* import Button from "../../components/Button"; */
-import Card from "./../../components/Card";
+import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/houseRoof.png";
 
 const HomePage = (props) => {
   return (
     <div>
-      <h1>Bo tillsammans med andra</h1>
-      <p>
+      <h1 className={styles.title}>Bo tillsammans med andra</h1>
+      <p className={styles.text}>
         Kollektiva förmedlar på ett tryggt och effektivt sätt ut delade
         hyresbostäder.
       </p>

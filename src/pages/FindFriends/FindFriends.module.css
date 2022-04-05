@@ -1,0 +1,28 @@
+.choice {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.title {
+  top: 172px;
+  width: 381px;
+  font-size: 48px;
+  line-height: 1;
+  /* margin-left: 22px; */
+}
+
+.subTitle {
+  width: 286px;
+  font-size: 24px;
+  line-height: 1;
+  /*  font-weight: 600; */
+  /* margin-left: 6px; */
+}
+
+.text {
+  font-size: 18px;
+  width: 311px;
+  margin-left: 12px;
+  margin-bottom: 40px;
+}
