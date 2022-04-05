@@ -7,9 +7,8 @@
 
 To install this project follow this list
 - Clone the project
-```
-git clone https://github.com/JennAnd/kollektiva2.0
-```
+``` git clone https://github.com/JennAnd/kollektiva2.0 ```
+
 - Start server ```npm start```
  
 - In the best of worlds your browser will open its self if not paste in this link:
