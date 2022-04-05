@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 /* import Button from "../../components/Button"; */
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/houseRoof.png";
-import Footer from "../../components/Footer/footer";
+import Footer from "../../components/Footer/Footer";
 
 const HomePage = (props) => {
   return (
