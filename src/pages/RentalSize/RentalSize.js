@@ -6,13 +6,13 @@ import Button from "../../components/Button/Button";
 const RentalSizePage = (props) => {
   return (
     <div className={styles.choice}>
-      <h1 className={styles.title}>Ge en beskrivning</h1>
+      <h1 className={styles.title}>Hur stor yta hyr du ut?</h1>
       <p className={styles.text}>
-        Ge en generell beskrivning av bostaden och dess område.
+        Fyll i storleken på den boarea du vill hyra ut.
       </p>
-      <form>
-        <p className={styles.text}>Antal rum</p>
-        <select>
+      <p className={styles.text}>Antal rum</p>
+      <form className={styles.form}>
+        <select className={styles.select}>
           <option value="size">1</option>
           <option value="size">2</option>
           <option value="size">3</option>
@@ -23,16 +23,16 @@ const RentalSizePage = (props) => {
           <p className={styles.text}>rum</p>
         </div>
       </form>
-      <form>
-        <p className={styles.text}>Storlek</p>
-        <select>
+      <p className={styles.text}>Storlek</p>
+      <form className={styles.form}>
+        <select className={styles.select}>
           <option value="size">22</option>
           <option value="size">23</option>
           <option value="size">24</option>
           <option value="size">25</option>
           <option value="size">26</option>
         </select>
-        <div>
+        <div className={styles.size}>
           <p className={styles.text}>m&sup2;</p>
         </div>
       </form>
