@@ -6,36 +6,39 @@
 
 .title {
   width: 361px;
-  font-size: 48px;
-  line-height: 1;
+  font-size: 32px;
+  line-height: 38px;
   font-weight: 700;
+  margin: 0px 0px 8px 0px;
 }
 
 .text {
   font-size: 18px;
-  width: 396px;
-  margin-bottom: 32px;
+  line-height: 21px;
+  margin: 0px 0px 12px 0px;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
 }
 
-input [type="search"] {
-  background-color: gray;
-}
-
-svg {
-  position: absolute;
-}
-
-label {
+.label {
   font-size: 18px;
   line-height: 21px;
   font-weight: 600;
+  margin: 12px 0px 0px 0px;
 }
 
+.input {
+  width: 396px;
+  height: 58px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 4px 0px 12px 0px;
+  font-size: 18px;
+}
 .pageNavigation {
   display: flex;
   justify-content: space-between;
