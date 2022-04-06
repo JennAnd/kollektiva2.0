@@ -1,0 +1,31 @@
+.choice {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.title {
+  width: 361px;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.subTitle {
+  width: 361px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.viewMyPages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+textarea {
+  border-radius: 8px;
+  border: 2px solid black;
+}
