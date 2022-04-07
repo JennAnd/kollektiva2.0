@@ -11,7 +11,7 @@ const DescriptionPage = (props) => {
         Ge en generell beskrivning av bostaden och dess område.
       </p>
       <form>
-        <textarea cols="50" rows="20" />
+        <textarea />
       </form>
 
       <div className={styles.pageNavigation}>
