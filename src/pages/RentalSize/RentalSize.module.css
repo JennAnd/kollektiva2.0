@@ -18,9 +18,19 @@
   margin: 0px 0px 12px 0px;
 }
 
+.textSize {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0px;
+  text-align: center;
+}
+
 .size {
-  border-radius: 8px;
+  border-radius: 0px 8px 8px 0px;
   border: 2px solid black;
+  width: 86px;
+  display: flex;
+  align-items: center;
 }
 
 .form {
@@ -29,10 +39,11 @@
 }
 
 .select {
-  border-radius: 8px;
+  border-radius: 8px 0px 0px 8px;
   border: 2px solid black;
   width: 369px;
   height: 58px;
+  padding-left: 18px;
 }
 
 .pageNavigation {
