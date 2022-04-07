@@ -1,118 +1,92 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import facebook from "../../assets/images/facebook.svg";
+import twitter from "../../assets/images/twitter.svg";
+import instagram from "../../assets/images/instagram.svg";
+import phone from "../../assets/images/phone.svg";
+import mail from "../../assets/images/mail.svg";
 
 const Footer = () => {
   return (
     <footer>
-      <div className={styles.contact}>
+      <div className={styles.contactUs}>
         <h3 className={styles.subheading}>Kontakta oss</h3>
         <p className={styles.text}>
           Kontakta oss vid behov av hjälp med registering, annonsering och
           övrigt
         </p>
-        <div className={styles.phone}>
-          <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="15" cy="15" r="15" fill="#C4C4C4" />
-            <path
-              d="M7.70312 9.49609L9.7832 7.41797C9.92993 7.27059 10.1043 7.15366 10.2964 7.07389C10.4885 6.99412 10.6944 6.95308 10.9023 6.95313C11.3262 6.95313 11.7246 7.11914 12.0234 7.41797L14.2617 9.65625C14.4091 9.80298 14.526 9.97738 14.6058 10.1694C14.6856 10.3615 14.7266 10.5674 14.7266 10.7754C14.7266 11.1992 14.5605 11.5977 14.2617 11.8965L12.625 13.5332C13.0081 14.3777 13.5408 15.1459 14.1973 15.8008C14.8521 16.4589 15.6203 16.9935 16.4648 17.3789L18.1016 15.7422C18.2483 15.5948 18.4227 15.4779 18.6148 15.3981C18.8068 15.3183 19.0127 15.2773 19.2207 15.2773C19.6445 15.2773 20.043 15.4434 20.3418 15.7422L22.582 17.9785C22.7296 18.1255 22.8466 18.3002 22.9264 18.4926C23.0062 18.685 23.0471 18.8913 23.0469 19.0996C23.0469 19.5234 22.8809 19.9219 22.582 20.2207L20.5059 22.2969C20.0293 22.7754 19.3711 23.0469 18.6953 23.0469C18.5527 23.0469 18.416 23.0352 18.2812 23.0117C15.6484 22.5781 13.0371 21.1777 10.9297 19.0723C8.82422 16.9688 7.42578 14.3594 6.98633 11.7188C6.85351 10.9121 7.12109 10.082 7.70312 9.49609Z"
-              fill="black"
-            />
-          </svg>
+        <div className={styles.link}>
+          <img src={phone} alt="phone icon" />
           <a className={styles.text} href="tel:010-70 75 100">
             010-70 75 100
           </a>
         </div>
 
-        <div className={styles.mail}>
-          <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="15" cy="15" r="15" fill="#C4C4C4" />
-            <path
-              d="M19.6079 17.1721C19.6079 18.0121 19.8469 18.3471 20.4719 18.3471C21.865 18.3471 22.7519 16.5721 22.7519 13.6201C22.7519 9.10813 19.4639 6.94813 15.3589 6.94813C11.1359 6.94813 7.29495 9.78013 7.29495 15.1321C7.29495 20.2441 10.6549 23.0281 15.8149 23.0281C17.5669 23.0281 18.7429 22.8361 20.5419 22.2361L20.9279 23.8431C19.1519 24.4201 17.254 24.5871 15.7909 24.5871C9.02295 24.5871 5.39795 20.8671 5.39795 15.1311C5.39795 9.34713 9.59895 5.41113 15.3829 5.41113C21.4069 5.41113 24.5979 9.01113 24.5979 13.4271C24.5979 17.1711 23.423 20.0271 19.7269 20.0271C18.0459 20.0271 16.9429 19.3551 16.7989 17.8661C16.3669 19.5221 15.2149 20.0271 13.6539 20.0271C11.5659 20.0271 9.81395 18.4181 9.81395 15.1791C9.81395 11.9151 11.3509 9.89913 14.1109 9.89913C15.5749 9.89913 16.4869 10.4751 16.8929 11.3871L17.5899 10.1151H19.6059V17.1721H19.6079ZM16.6569 14.0041C16.6569 12.6851 15.6719 12.1321 14.8559 12.1321C13.9679 12.1321 12.9849 12.8511 12.9849 14.9641C12.9849 16.6441 13.7289 17.5801 14.8559 17.5801C15.6479 17.5801 16.6569 17.0761 16.6569 15.6841V14.0041Z"
-              fill="black"
-            />
-          </svg>
+        <div className={styles.link}>
+          <img src={mail} alt="mail icon" />
           <a className={styles.text} href="mailto:webmaster@example.com">
             support@kollektiva.se
           </a>
         </div>
       </div>
-      <div className={styles.link}>
+      <div className={styles.linkPage}>
         <h3 className={styles.subheading}>Hyr ut bostad</h3>
-        <a className={styles.text}>Frågor och svar</a>
-        <a className={styles.text}>Berättelser</a>
-        <a className={styles.text}>Hur det fungerar</a>
+        <a href="/" className={styles.text}>
+          Frågor och svar
+        </a>
+        <a href="/" className={styles.text}>
+          Berättelser
+        </a>
+        <a href="/" className={styles.text}>
+          Hur det fungerar
+        </a>
         <h3 className={styles.subheading}>Hyra bostad</h3>
-        <a className={styles.text}>Frågor och svar </a>
-        <a className={styles.text}>Annonser</a>
+        <a href="/" className={styles.text}>
+          Frågor och svar{" "}
+        </a>
+        <a href="/" className={styles.text}>
+          Annonser
+        </a>
         <h3 className={styles.subheading}>Kollektiva</h3>
-        <a className={styles.text}>Om oss</a>
-        <a className={styles.text}>Allmänna villkor </a>
+        <a href="/" className={styles.text}>
+          Om oss
+        </a>
+        <a href="/" className={styles.text}>
+          Allmänna villkor{" "}
+        </a>
         <h3 className={styles.subheading}>Stöd</h3>
-        <a className={styles.text}>Hjälp och guide</a>
-        <a className={styles.text}>Säkerhetsinformation</a>
-        <a className={styles.text}>Hjälp och guide </a>
+        <a href="/" className={styles.text}>
+          Hjälp och guide
+        </a>
+        <a href="/" className={styles.text}>
+          Säkerhetsinformation
+        </a>
+        <a href="/" className={styles.text}>
+          Hjälp och guide{" "}
+        </a>
       </div>
       <div className={styles.socialMedia}>
         <h3 className={styles.subheading}>Sociala medier</h3>
         <p className={styles.text}>
           Följ oss för nyheter och uppdateringar om Kollektiva.
         </p>
-        <div className={styles.icon}>
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 36 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30.9375 3.9375H5.0625C4.44023 3.9375 3.9375 4.44023 3.9375 5.0625V30.9375C3.9375 31.5598 4.44023 32.0625 5.0625 32.0625H30.9375C31.5598 32.0625 32.0625 31.5598 32.0625 30.9375V5.0625C32.0625 4.44023 31.5598 3.9375 30.9375 3.9375ZM27.6891 12.1465H25.4426C23.6812 12.1465 23.3402 12.9832 23.3402 14.2137V16.9242H27.5449L26.9965 21.1676H23.3402V32.0625H18.9563V21.1711H15.2895V16.9242H18.9563V13.7953C18.9563 10.1637 21.1746 8.18438 24.416 8.18438C25.9699 8.18438 27.3023 8.30039 27.6926 8.35313V12.1465H27.6891Z"
-              fill="black"
-            />
-          </svg>
-          <p className={styles.text}>Facebook</p>
+        <div className={styles.link}>
+          <img src={facebook} alt="facebook icon" />
+          <a href="/" className={styles.text}>
+            Facebook
+          </a>
         </div>
-        <div className={styles.icon}>
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 36 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32.6251 8.94025C31.5493 9.40431 30.3786 9.7383 29.1728 9.86837C30.4247 9.12459 31.3622 7.94954 31.8095 6.56369C30.6347 7.26255 29.3477 7.75261 28.0056 8.01212C27.4446 7.41245 26.7662 6.93472 26.0126 6.60871C25.2589 6.2827 24.4462 6.11539 23.6251 6.1172C20.3028 6.1172 17.631 8.81017 17.631 12.1149C17.631 12.5789 17.6872 13.043 17.7786 13.4895C12.804 13.2293 8.36728 10.8527 5.41768 7.21408C4.88023 8.13206 4.59858 9.17729 4.60205 10.241C4.60205 12.3223 5.66025 14.1574 7.27393 15.2367C6.32296 15.1993 5.39427 14.9379 4.56338 14.4738V14.5477C4.56338 17.4621 6.62354 19.8774 9.36924 20.4328C8.8537 20.5667 8.32336 20.6352 7.79072 20.6367C7.40049 20.6367 7.03135 20.5981 6.65869 20.5453C7.41807 22.9219 9.62939 24.6481 12.2626 24.7043C10.2024 26.318 7.62197 27.2672 4.82002 27.2672C4.31729 27.2672 3.85322 27.2496 3.37158 27.1934C6.02939 28.8985 9.18291 29.8828 12.579 29.8828C23.604 29.8828 29.6368 20.7492 29.6368 12.8215C29.6368 12.5613 29.6368 12.3012 29.6192 12.041C30.7864 11.1867 31.8095 10.1285 32.6251 8.94025Z"
-              fill="black"
-            />
-          </svg>
-          <p className={styles.text}>Twitter</p>
+        <div className={styles.link}>
+          <img src={twitter} alt="twitter icon" />
+          <a href="/" className={styles.text}>
+            Twitter
+          </a>
         </div>
-        <div className={styles.icon}>
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 36 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.9999 13.3134C15.4195 13.3134 13.3136 15.4193 13.3136 17.9998C13.3136 20.5802 15.4195 22.6861 17.9999 22.6861C20.5804 22.6861 22.6863 20.5802 22.6863 17.9998C22.6863 15.4193 20.5804 13.3134 17.9999 13.3134ZM32.0554 17.9998C32.0554 16.0592 32.073 14.1361 31.964 12.199C31.855 9.949 31.3417 7.95212 29.6964 6.30681C28.0476 4.65798 26.0542 4.14821 23.8042 4.03923C21.8636 3.93024 19.9405 3.94782 18.0034 3.94782C16.0628 3.94782 14.1398 3.93024 12.2027 4.03923C9.95266 4.14821 7.95578 4.66149 6.31047 6.30681C4.66164 7.95564 4.15188 9.949 4.04289 12.199C3.93391 14.1396 3.95149 16.0627 3.95149 17.9998C3.95149 19.9369 3.93391 21.8634 4.04289 23.8006C4.15188 26.0506 4.66516 28.0474 6.31047 29.6927C7.9593 31.3416 9.95266 31.8513 12.2027 31.9603C14.1433 32.0693 16.0663 32.0517 18.0034 32.0517C19.9441 32.0517 21.8671 32.0693 23.8042 31.9603C26.0542 31.8513 28.0511 31.3381 29.6964 29.6927C31.3452 28.0439 31.855 26.0506 31.964 23.8006C32.0765 21.8634 32.0554 19.9404 32.0554 17.9998ZM17.9999 25.2103C14.0097 25.2103 10.7894 21.99 10.7894 17.9998C10.7894 14.0095 14.0097 10.7892 17.9999 10.7892C21.9902 10.7892 25.2105 14.0095 25.2105 17.9998C25.2105 21.99 21.9902 25.2103 17.9999 25.2103ZM25.5058 12.1779C24.5741 12.1779 23.8218 11.4256 23.8218 10.4939C23.8218 9.56228 24.5741 8.80993 25.5058 8.80993C26.4374 8.80993 27.1898 9.56228 27.1898 10.4939C27.19 10.7151 27.1467 10.9342 27.0621 11.1387C26.9776 11.3431 26.8536 11.5289 26.6972 11.6853C26.5407 11.8417 26.355 11.9658 26.1505 12.0503C25.9461 12.1348 25.727 12.1782 25.5058 12.1779Z"
-              fill="black"
-            />
-          </svg>
-          <p className={styles.text}>Instagram</p>
+        <div className={styles.link}>
+          <img src={instagram} alt="instagram icon" />
+          <a href="/" className={styles.text}>
+            Instagram
+          </a>
         </div>
       </div>
       <p className={styles.copyright}>Copyright 2022 © Kollektiva</p>
