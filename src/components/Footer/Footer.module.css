@@ -2,6 +2,14 @@ footer {
   background-color: #c4c4c4;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .socialMedia {
   display: flex;
   flex-direction: column;
@@ -30,27 +38,25 @@ footer {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
+  color: black;
 }
 
-.icon {
-  display: flex;
-  flex-direction: row;
-  gap: 9px;
-  align-items: center;
-}
-
-svg {
-  position: relative;
-}
-
-.link {
+.linkPage {
   display: flex;
   flex-direction: column;
   margin: 0px 16px 0px 16px;
   border-top: 2px solid #a0a0a0;
 }
-.contact {
+.contactUs {
   display: flex;
   flex-direction: column;
   margin: 0px 16px 0px 16px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 12px;
 }
