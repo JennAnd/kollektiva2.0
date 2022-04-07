@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./Card.module.css";
 import Button from "../Button/Button";
 
-const Card = ({ image, title, text, buttonText, bg }) => {
+const Card = ({ image, title, text }) => {
   return (
     <article className={styles.card}>
       <img src={image} alt="houseroof" />
@@ -20,7 +20,5 @@ Card.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   text: PropTypes.string,
-  buttonText: PropTypes.string,
-  bg: PropTypes.string,
 };
 export default Card;

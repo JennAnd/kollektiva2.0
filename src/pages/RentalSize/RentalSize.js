@@ -20,7 +20,7 @@ const RentalSizePage = (props) => {
           <option value="size">5</option>
         </select>
         <div className={styles.size}>
-          <p className={styles.text}>rum</p>
+          <p className={styles.textSize}>rum</p>
         </div>
       </form>
       <p className={styles.text}>Storlek</p>
@@ -33,7 +33,7 @@ const RentalSizePage = (props) => {
           <option value="size">26</option>
         </select>
         <div className={styles.size}>
-          <p className={styles.text}>m&sup2;</p>
+          <p className={styles.textSize}>m&sup2;</p>
         </div>
       </form>
 
