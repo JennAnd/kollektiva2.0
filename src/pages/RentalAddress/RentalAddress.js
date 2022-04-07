@@ -2,6 +2,8 @@ import React from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalAddress.module.css";
 import Button from "../../components/Button/Button";
+import ArrowLeft from "../../assets/images/arrow-left.svg";
+import ArrowRight from "../../assets/images/arrow-right.svg";
 
 const RentalAddressPage = (props) => {
   return (
@@ -30,11 +32,12 @@ const RentalAddressPage = (props) => {
       </form>
 
       <div className={styles.pageNavigation}>
-        <Button handleClick={() => navigate("/")} buttonText="Tillbaka" />
-        <Button
-          handleClick={() => navigate("/rental-size")}
-          buttonText="Spara & fortsätt"
-        />
+        <Button handleClick={() => navigate("/")}>
+          <img src={ArrowLeft} alt="arrow points to left"></img>Tillbaka
+        </Button>
+        <Button handleClick={() => navigate("/rental-size")}>
+          Fortsätt <img src={ArrowRight} alt="arrow points to right"></img>
+        </Button>
       </div>
     </div>
   );
