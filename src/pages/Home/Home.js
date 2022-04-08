@@ -4,6 +4,7 @@ import styles from "./Home.module.css";
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/houseRoof.png";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
 
 const HomePage = (props) => {
   return (
@@ -27,6 +28,7 @@ const HomePage = (props) => {
         buttonText="Läs mer om att hyra en bostad"
         bg="white"
       ></Card>
+      <Menu />
       <Footer />
     </div>
   );
