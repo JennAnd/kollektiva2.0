@@ -2,6 +2,7 @@ import React from "react";
 import { navigate } from "@reach/router";
 import styles from "./Description.module.css";
 import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
 
 const DescriptionPage = (props) => {
   return (
@@ -24,6 +25,7 @@ const DescriptionPage = (props) => {
           buttonText="Spara & fortsätt"
         />
       </div>
+      <Footer />
     </div>
   );
 };

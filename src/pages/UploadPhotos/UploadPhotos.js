@@ -2,6 +2,7 @@ import React from "react";
 import { navigate } from "@reach/router";
 import styles from "./UploadPhotos.module.css";
 import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
 
 const UploadPhotosPage = (props) => {
   return (
@@ -113,6 +114,7 @@ const UploadPhotosPage = (props) => {
       <form>
         <textarea cols="50" rows="16" />
       </form>
+      <Footer />
     </div>
   );
 };

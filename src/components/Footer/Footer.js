@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.linkPage}>
-        <h3 className={styles.subheading}>Hyr ut bostad</h3>
+        <h3 className={styles.subheadingFirst}>Hyr ut bostad</h3>
         <a href="/" className={styles.textInfo}>
           Frågor och svar
         </a>
@@ -62,12 +62,12 @@ const Footer = () => {
         <a href="/" className={styles.textInfo}>
           Tillgänglighet
         </a>
-        <a href="/" className={styles.textInfo}>
+        <a href="/" className={styles.textInfoLast}>
           {/* Hjälp och guide{" "} */}Säkerhetsinformation
         </a>
       </div>
       <div className={styles.socialMedia}>
-        <h3 className={styles.subheading}>Sociala medier</h3>
+        <h3 className={styles.subheadingFirst}>Sociala medier</h3>
         <p className={styles.text}>
           Följ oss för nyheter och uppdateringar om Kollektiva.
         </p>

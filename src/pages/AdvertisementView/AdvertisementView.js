@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./AdvertisementView.module.css";
 import Button from "../../components/Button/Button";
 /* import houseView from "./../../assets/images/houseView.png"; */
+import Footer from "../../components/Footer/Footer";
 
 const AdvertisementViewPage = (props) => {
   return (
@@ -32,6 +33,7 @@ const AdvertisementViewPage = (props) => {
       <h3 className={styles.subTitle}>Utomhus</h3>
       <p className={styles.smallText}>Diskmaskin</p>
       <p className={styles.smallText}>Microvågsugn</p>
+      <Footer />
     </div>
   );
 };

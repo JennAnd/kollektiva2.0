@@ -13,7 +13,7 @@ a:hover {
 .socialMedia {
   display: flex;
   flex-direction: column;
-  margin: 0px 16px 0px 16px;
+  margin: 16px 16px 0px 16px;
   border-top: 2px solid #a0a0a0;
 }
 .copyright {
@@ -37,12 +37,28 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.textInfoLast {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: black;
+  margin-bottom: 12px;
+}
+
 .subheading {
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
   margin-bottom: 2px;
-  margin-top: 40px;
+  margin-top: 36px;
+}
+
+.subheadingFirst {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 2px;
+  margin-top: 26px;
 }
 
 .text {
@@ -72,7 +88,7 @@ a:hover {
 .linkPage {
   display: flex;
   flex-direction: column;
-  margin: 0px 16px 0px 16px;
+  margin: 16px 16px 0px 16px;
   border-top: 2px solid #a0a0a0;
 }
 .contactUs {

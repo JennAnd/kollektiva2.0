@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./FormOfHousing.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
+import Footer from "../../components/Footer/Footer";
 
 const FormOfHousingPage = (props) => {
   return (
@@ -40,6 +41,7 @@ const FormOfHousingPage = (props) => {
           buttonText="Spara & fortsätt"
         />
       </div>
+      <Footer />
     </div>
   );
 };

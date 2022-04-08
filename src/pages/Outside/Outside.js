@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./Outside.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
+import Footer from "../../components/Footer/Footer";
 
 const OutsidePage = (props) => {
   return (
@@ -27,6 +28,7 @@ const OutsidePage = (props) => {
           buttonText="Spara & fortsätt"
         />
       </div>
+      <Footer />
     </div>
   );
 };

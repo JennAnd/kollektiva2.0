@@ -9,15 +9,12 @@
   font-size: 50px;
   font-weight: 700;
   line-height: 1;
-  margin-left: 11px;
 }
 
 .subTitle {
   width: 281px;
   font-size: 24px;
-  /*  line-height: 1; */
   font-weight: 700;
-  margin-left: 16px;
   top: 309px;
 }
 
@@ -25,7 +22,6 @@
   font-size: 16px;
   font-weight: 400;
   width: 384px;
-  margin-left: 12px;
   margin-bottom: 40px;
   left: 16px;
 }

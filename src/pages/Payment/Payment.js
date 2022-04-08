@@ -2,6 +2,7 @@ import React from "react";
 import { navigate } from "@reach/router";
 import styles from "./Payment.module.css";
 import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
 
 const PaymentPage = (props) => {
   return (
@@ -19,6 +20,7 @@ const PaymentPage = (props) => {
           buttonText="Spara & fortsätt"
         />
       </div>
+      <Footer />
     </div>
   );
 };
