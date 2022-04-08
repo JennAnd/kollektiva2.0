@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./RentalType.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
+import Footer from "../../components/Footer/Footer";
 
 const RentalTypePage = (props) => {
   return (
@@ -65,6 +66,7 @@ const RentalTypePage = (props) => {
           buttonText="Spara & fortsätt"
         />
       </div>
+      <Footer />
     </div>
   );
 };

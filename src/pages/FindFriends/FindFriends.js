@@ -4,6 +4,7 @@ import styles from "./FindFriends.module.css";
 import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/houseRoof.png";
+import Footer from "../../components/Footer/Footer";
 
 const FindFriendsPage = (props) => {
   return (
@@ -21,6 +22,7 @@ const FindFriendsPage = (props) => {
         buttonText="Skapa annons nu"
         bg="white"
       ></Card>
+      <Footer />
     </div>
   );
 };

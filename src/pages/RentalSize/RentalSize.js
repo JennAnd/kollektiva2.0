@@ -2,6 +2,7 @@ import React from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalSize.module.css";
 import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
 
 const RentalSizePage = (props) => {
   return (
@@ -47,6 +48,7 @@ const RentalSizePage = (props) => {
           buttonText="Spara & fortsätt"
         />
       </div>
+      <Footer />
     </div>
   );
 };
