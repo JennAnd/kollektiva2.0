@@ -18,6 +18,26 @@
   margin: 0px 0px 12px 0px;
   line-height: 40px;
 }
+.textDatePicker {
+  /* display: flex;
+  justify-content: flex-start; */
+  gap: 18px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.datePickerContainerStart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.datePickerContainerEnd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .pageNavigation {
   display: flex;
