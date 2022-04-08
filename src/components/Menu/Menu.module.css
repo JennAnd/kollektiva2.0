@@ -3,3 +3,10 @@
   height: 64px;
 }
 
+button {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
