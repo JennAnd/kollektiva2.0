@@ -5,7 +5,7 @@ import styles from "./RadioButton.module.css";
 const RadioButton = ({ value, name, id }) => {
   return (
     <div className={styles.inputBox}>
-      <input type="radio" id={id} name={name}></input>
+      <input className={styles.input} type="radio" id={id} name={name}></input>
       <label for={id}>{value}</label>
     </div>
   );
