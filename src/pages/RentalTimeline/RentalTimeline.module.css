@@ -14,32 +14,41 @@
 
 .text {
   font-size: 18px;
-  line-height: 21px;
   margin: 0px 0px 12px 0px;
   line-height: 40px;
 }
 .textDatePicker {
-  /* display: flex;
-  justify-content: flex-start; */
-  gap: 18px;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0px 0px 12px 0px;
 }
 
 .datePickerContainerStart {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 18px;
 }
 
 .datePickerContainerEnd {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+  gap: 31px;
+  margin-top: 14px;
 }
 
 .pageNavigation {
   display: flex;
   justify-content: space-between;
+}
+
+input {
+  font-size: 20px;
+  width: 330px;
+  height: 55px;
+  border-radius: 4px;
+  padding-left: 18px;
 }
