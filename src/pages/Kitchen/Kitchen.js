@@ -4,6 +4,7 @@ import styles from "./Kitchen.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
 
 const KitchenPage = (props) => {
   return (
@@ -50,6 +51,7 @@ const KitchenPage = (props) => {
           buttonText="Spara & fortsätt"
         />
       </div>
+      <Menu />
       <Footer />
     </div>
   );
