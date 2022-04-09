@@ -15,7 +15,9 @@ const RentalTimelinePage = () => {
       <h1 className={styles.title}>Tidsperiod</h1>
       <p className={styles.text}>Välj hur länge du vill hyra ut din bostad.</p>
       <div className={styles.datePickerContainerStart}>
-        <p className={styles.textDatePicker}>Från</p>
+        <label for="startDate" className={styles.textDatePicker}>
+          Från:
+        </label>
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
@@ -25,7 +27,9 @@ const RentalTimelinePage = () => {
         />
       </div>
       <div className={styles.datePickerContainerEnd}>
-        <p className={styles.textDatePicker}>Till</p>
+        <label for="endDate" className={styles.textDatePicker}>
+          Till:
+        </label>
         <DatePicker
           selected={endDate}
           onChange={(date) => setEndDate(date)}
