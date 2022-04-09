@@ -13,6 +13,7 @@ const RentalSizePage = (props) => {
       </p>
       <p className={styles.text}>Antal rum</p>
       <form className={styles.form}>
+        <label for="size"></label>
         <select className={styles.select}>
           <option value="size">1</option>
           <option value="size">2</option>
@@ -26,6 +27,7 @@ const RentalSizePage = (props) => {
       </form>
       <p className={styles.text}>Storlek</p>
       <form className={styles.form}>
+        <label for="size"></label>
         <select className={styles.select}>
           <option value="size">22</option>
           <option value="size">23</option>
