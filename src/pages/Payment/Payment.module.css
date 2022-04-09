@@ -11,11 +11,11 @@
   font-weight: 700;
 }
 
-p {
+/* p {
   font-size: 18px;
   width: 396px;
   margin-bottom: 32px;
-}
+} */
 
 .pageNavigation {
   display: flex;
