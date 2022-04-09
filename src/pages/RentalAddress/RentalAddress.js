@@ -5,6 +5,7 @@ import Button from "../../components/Button/Button";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
 
 const RentalAddressPage = (props) => {
   return (
@@ -40,6 +41,7 @@ const RentalAddressPage = (props) => {
           Fortsätt <img src={ArrowRight} alt="arrow points to right"></img>
         </Button>
       </div>
+      <Menu />
       <Footer />
     </div>
   );
