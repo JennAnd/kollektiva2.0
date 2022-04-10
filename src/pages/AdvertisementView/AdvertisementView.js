@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./AdvertisementView.module.css";
 import Button from "../../components/Button/Button";
 /* import houseView from "./../../assets/images/houseView.png"; */
 import Footer from "../../components/Footer/Footer";
+import Popup from "../../components/Popup/Popup";
+import Menu from "../../components/Menu/Menu";
 
 const AdvertisementViewPage = (props) => {
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Såhär kommer din annons se ut</h1>
@@ -33,6 +36,14 @@ const AdvertisementViewPage = (props) => {
       <h3 className={styles.subTitle}>Utomhus</h3>
       <p className={styles.smallText}>Diskmaskin</p>
       <p className={styles.smallText}>Microvågsugn</p>
+      <button onClick={() => setButtonPopup(true)}>Open popup</button>
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <h3>Är du nöjd med din annons?</h3>
+        <p>Det går att uppdatera delar av din annons senare på mina sidor.</p>
+        <p>Kontakta oss om du behöver hjälp med din annos.</p>
+        <button>Publicera min annons nu</button>
+      </Popup>
+      <Menu />
       <Footer />
     </div>
   );
