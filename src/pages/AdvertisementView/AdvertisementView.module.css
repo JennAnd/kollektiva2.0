@@ -31,3 +31,14 @@
   font-weight: 400;
   width: 86px;
 }
+
+.closedBtn {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  position: fixed;
+  bottom: 0;
+}

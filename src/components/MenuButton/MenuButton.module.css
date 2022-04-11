@@ -1,0 +1,12 @@
+.MenuButton {
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  position: fixed;
+  bottom: 0;
+
+  border-top: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}

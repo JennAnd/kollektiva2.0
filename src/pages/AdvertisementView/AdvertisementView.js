@@ -6,9 +6,12 @@ import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import Popup from "../../components/Popup/Popup";
 import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
+import menuClosed from "../../assets/images/menu-closed.svg";
 
 const AdvertisementViewPage = (props) => {
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Såhär kommer din annons se ut</h1>
@@ -41,9 +44,10 @@ const AdvertisementViewPage = (props) => {
         <h3>Är du nöjd med din annons?</h3>
         <p>Det går att uppdatera delar av din annons senare på mina sidor.</p>
         <p>Kontakta oss om du behöver hjälp med din annos.</p>
-        <button>Publicera min annons nu</button>
+        <Button>Publicera min annons nu</Button>
       </Popup>
-      <Menu />
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

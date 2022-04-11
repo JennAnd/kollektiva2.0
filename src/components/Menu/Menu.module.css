@@ -1,11 +1,7 @@
-.menuClosed {
+.openBtn {
   width: 100%;
   height: 64px;
-}
-
-button {
-  width: 100%;
-  background-color: #ffffff;
+  background-color: #05599e;
   border: none;
 }
 
@@ -25,7 +21,4 @@ button {
 }
 a {
   color: black;
-}
-.ToggleButton.Button {
-  background-color: orange;
 }
