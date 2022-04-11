@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 /* import Button from "../../components/Button"; */
 import Card from "../../components/Card/Card";
-import houseRoof from "./../../assets/images/houseRoof.png";
+import houseRoof from "./../../assets/images/house-roof.png";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
 
