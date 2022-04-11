@@ -3,7 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./FindFriends.module.css";
 import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
-import houseRoof from "./../../assets/images/houseRoof.png";
+import houseRoof from "./../../assets/images/house-roof.png";
 import Footer from "../../components/Footer/Footer";
 
 const FindFriendsPage = (props) => {
