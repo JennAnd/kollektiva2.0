@@ -2,16 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Button.module.css";
 
-const Button = ({ handleClick, children }) => {
+const Button = (props) => {
   return (
-    <button onClick={handleClick} className={styles.btn}>
-      {children}
+    <button className={styles.btn} onClick={props.onClick}>
+      {props.children}
     </button>
   );
-};
-
-Button.propTypes = {
-  handleClick: PropTypes.func,
 };
 
 export default Button;
