@@ -17,8 +17,36 @@
   margin-bottom: 32px;
 } */
 
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.textPrice {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0px;
+  text-align: center;
+  font-weight: 800;
+}
+.price {
+  border-radius: 0px 8px 8px 0px;
+  border: 2px solid black;
+  width: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .pageNavigation {
   display: flex;
   justify-content: space-between;
   margin-top: 65px;
+}
+
+.input {
+  border-radius: 8px 0px 0px 8px;
+  border: 2px solid black;
+  width: 369px;
+  height: 58px;
+  font-size: 18px;
 }
