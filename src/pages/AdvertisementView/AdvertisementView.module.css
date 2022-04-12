@@ -32,13 +32,24 @@
   width: 86px;
 }
 
-.closedBtn {
-  width: 100%;
-  background-color: #ffffff;
-  border-top: 2px solid black;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  position: fixed;
-  bottom: 0;
+.choice h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700px;
 }
+
+.choice p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500px;
+}
+
+/* .choice button {
+  font-size: 20px;
+  line-height: 24px;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid black;
+  height: 56px;
+  width: 300px;
+} */
