@@ -7,7 +7,6 @@ import Footer from "../../components/Footer/Footer";
 import Popup from "../../components/Popup/Popup";
 import Menu from "../../components/Menu/Menu";
 import MenuButton from "../../components/MenuButton/MenuButton";
-import menuClosed from "../../assets/images/menu-closed.svg";
 
 const AdvertisementViewPage = (props) => {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -39,7 +38,7 @@ const AdvertisementViewPage = (props) => {
       <h3 className={styles.subTitle}>Utomhus</h3>
       <p className={styles.smallText}>Diskmaskin</p>
       <p className={styles.smallText}>Microvågsugn</p>
-      <button onClick={() => setButtonPopup(true)}>Open popup</button>
+      <Button onClick={() => setButtonPopup(true)}>Open popup</Button>
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <h3>Är du nöjd med din annons?</h3>
         <p>Det går att uppdatera delar av din annons senare på mina sidor.</p>
