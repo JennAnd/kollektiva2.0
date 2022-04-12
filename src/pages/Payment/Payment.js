@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./Payment.module.css";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const PaymentPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Hyra</h1>
@@ -25,14 +28,16 @@ const PaymentPage = (props) => {
 
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/rental-timeline")}
+          onClick={() => navigate("/rental-timeline")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/upload-photos")}
+          onClick={() => navigate("/upload-photos")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

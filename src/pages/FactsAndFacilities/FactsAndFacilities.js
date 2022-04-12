@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./FactsAndFacilities.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const FactsAndFacilitiesPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Fakta och faciliteter</h1>
@@ -47,14 +50,16 @@ const FactsAndFacilitiesPage = (props) => {
       </div> */}
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/upload-photos")}
+          onClick={() => navigate("/upload-photos")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/bathroom")}
+          onClick={() => navigate("/bathroom")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

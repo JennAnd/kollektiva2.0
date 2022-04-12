@@ -5,10 +5,13 @@ import styles from "./RentalTimeline.module.css";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import "react-datepicker/dist/react-datepicker.css";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const RentalTimelinePage = () => {
   const [startDate, setStartDate] = useState(new Date("2022/01/01"));
   const [endDate, setEndDate] = useState(new Date("2022/01/02"));
+  const [buttonMenu, setButtonMenu] = useState(false);
 
   return (
     <div className={styles.choice}>
@@ -41,14 +44,16 @@ const RentalTimelinePage = () => {
       </div>
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/number-of-people")}
+          onClick={() => navigate("/number-of-people")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/payment")}
+          onClick={() => navigate("/payment")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

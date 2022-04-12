@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalSize.module.css";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const RentalSizePage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Hur stor yta hyr du ut?</h1>
@@ -42,14 +45,16 @@ const RentalSizePage = (props) => {
 
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/rental-address")}
+          onClick={() => navigate("/rental-address")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/rental-type")}
+          onClick={() => navigate("/rental-type")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

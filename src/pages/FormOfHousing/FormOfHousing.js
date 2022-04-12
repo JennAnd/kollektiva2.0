@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./FormOfHousing.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const FormOfHousingPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Boendeform</h1>
@@ -33,14 +36,16 @@ const FormOfHousingPage = (props) => {
       </div> */}
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/rental-type")}
+          onClick={() => navigate("/rental-type")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/number-of-people")}
+          onClick={() => navigate("/number-of-people")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

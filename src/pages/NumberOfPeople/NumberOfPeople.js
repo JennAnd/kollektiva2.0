@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./NumberOfPeople.module.css";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const NumberOfPeoplePage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
+
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Hur många hyr du ut till?</h1>
@@ -23,14 +27,16 @@ const NumberOfPeoplePage = (props) => {
       </div>
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/form-of-housing")}
+          onClick={() => navigate("/form-of-housing")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/rental-timeline")}
+          onClick={() => navigate("/rental-timeline")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

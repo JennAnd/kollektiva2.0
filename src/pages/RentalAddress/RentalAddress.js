@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalAddress.module.css";
 import Button from "../../components/Button/Button";
@@ -6,8 +6,11 @@ import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const RentalAddressPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
+
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Bostadens adress</h1>
@@ -34,14 +37,16 @@ const RentalAddressPage = (props) => {
       </form>
 
       <div className={styles.pageNavigation}>
-        <Button handleClick={() => navigate("/")}>
-          <img src={ArrowLeft} alt="arrow points to left"></img>Tillbaka
+        <Button onClick={() => navigate("/")}>
+          <img src={ArrowLeft} alt="arrow points to left" />
+          Tillbaka
         </Button>
-        <Button handleClick={() => navigate("/rental-size")}>
-          Fortsätt <img src={ArrowRight} alt="arrow points to right"></img>
+        <Button onClick={() => navigate("/rental-size")}>
+          Fortsätt <img src={ArrowRight} alt="arrow points to right" />
         </Button>
       </div>
-      <Menu />
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

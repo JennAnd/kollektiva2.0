@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./Bathroom.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const BathroomPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Badrum</h1>
@@ -49,14 +52,16 @@ const BathroomPage = (props) => {
       </div> */}
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/facts-and-facilities")}
+          onClick={() => navigate("/facts-and-facilities")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/kitchen")}
+          onClick={() => navigate("/kitchen")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

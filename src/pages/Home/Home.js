@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Home.module.css";
 /* import Button from "../../components/Button"; */
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/house-roof.png";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const HomePage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div>
       <h1 className={styles.title}>Bo tillsammans med andra</h1>
@@ -28,7 +30,8 @@ const HomePage = (props) => {
         buttonText="Läs mer om att hyra en bostad"
         bg="white"
       ></Card>
-      <Menu />
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

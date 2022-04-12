@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./AdvertisementPublish.module.css";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
+import MenuButton from "../../components/MenuButton/MenuButton";
+import Menu from "../../components/Menu/Menu";
 
 const AdvertisementPublishPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Din annons har publicerats</h1>
@@ -31,6 +34,8 @@ const AdvertisementPublishPage = (props) => {
         </ul>
         <textarea cols="50" rows="8" />
       </form>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

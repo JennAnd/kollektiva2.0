@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./FindFriends.module.css";
 import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/house-roof.png";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const FindFriendsPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Hitta vänner</h1>
@@ -22,6 +25,8 @@ const FindFriendsPage = (props) => {
         buttonText="Skapa annons nu"
         bg="white"
       ></Card>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

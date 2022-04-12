@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalType.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const RentalTypePage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <h1 className={styles.title}>Typ av bostad</h1>
@@ -58,14 +61,16 @@ const RentalTypePage = (props) => {
 
       <div className={styles.pageNavigation}>
         <Button
-          handleClick={() => navigate("/rental-size")}
+          onClick={() => navigate("/rental-size")}
           buttonText="Tillbaka"
         />
         <Button
-          handleClick={() => navigate("/form-of-housing")}
+          onClick={() => navigate("/form-of-housing")}
           buttonText="Spara & fortsätt"
         />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );
