@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Popup.module.css";
+import popupClosed from "../../assets/images/close-btn.svg";
 
 function Popup(props) {
   return props.trigger ? (
@@ -9,7 +10,10 @@ function Popup(props) {
           className={styles.closeBtn}
           onClick={() => props.setTrigger(false)}
         >
-          X
+          <img
+            src={popupClosed}
+            alt="an x to press to colse the popup window"
+          />
         </button>
         {props.children}
       </div>
