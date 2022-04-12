@@ -43,7 +43,9 @@ const AdvertisementViewPage = (props) => {
         <h3>Är du nöjd med din annons?</h3>
         <p>Det går att uppdatera delar av din annons senare på mina sidor.</p>
         <p>Kontakta oss om du behöver hjälp med din annos.</p>
-        <Button>Publicera min annons nu</Button>
+        <Button onClick={() => navigate("/advertisement-publish")}>
+          Publicera min annons nu
+        </Button>
       </Popup>
       <MenuButton onClick={() => setButtonMenu(true)} />
       <Menu open={buttonMenu} setOpen={setButtonMenu} />
