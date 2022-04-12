@@ -11,6 +11,16 @@ const NumberOfPeoplePage = (props) => {
       <p className={styles.text}>Välj hur många som du vill hyra ut till.</p>
       <p className={styles.text}>Antal personer</p>
 
+      <div className={styles.container}>
+        <button className={styles.boxStart}>1</button>
+        <button className={styles.box}>2</button>
+        <button className={styles.box}>3</button>
+        <button className={styles.box}>4</button>
+        <button className={styles.box}>5</button>
+        <button className={styles.box}>6</button>
+        <button className={styles.box}>7</button>
+        <button className={styles.boxEnd}>+8</button>
+      </div>
       <div className={styles.pageNavigation}>
         <Button
           handleClick={() => navigate("/form-of-housing")}
