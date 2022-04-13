@@ -1,11 +1,16 @@
 .btn {
-  padding: 22px 18px 22px 18px;
-  background-color: gray;
-  border: 0;
+  width: 161px;
+  height: 64px;
+  background-color: #6b51ef;
+  border: none;
   border-radius: 8px;
   line-height: 24px;
-  font-size: 22px;
+  font-weight: 800;
+  font-size: 18px;
   font-family: Inter;
   cursor: pointer;
-  color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

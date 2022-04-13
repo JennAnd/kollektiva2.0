@@ -54,13 +54,21 @@ const RentalAddressPage = (props) => {
           </form>
 
           <div className={styles.pageNavigation}>
-            <Button onClick={() => navigate("/")}>
-              <img src={ArrowLeft} alt="arrow points to left" />
-              Tillbaka
-            </Button>
-            <Button onClick={() => navigate("/rental-size")}>
-              Fortsätt <img src={ArrowRight} alt="arrow points to right" />
-            </Button>
+            <Button
+              onClick={() => navigate("/")}
+              icon={ArrowLeft}
+              bg="white"
+              border="2px solid #3A0067"
+              color="#3A0067"
+              buttonText="Tillbaka"
+              flexDirection="row"
+            ></Button>
+            <Button
+              onClick={() => navigate("/rental-size")}
+              buttonText="Fortsätt"
+              icon={ArrowRight}
+              flexDirection="row-reverse"
+            ></Button>
           </div>
         </div>
       </div>
