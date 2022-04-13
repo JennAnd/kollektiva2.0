@@ -43,14 +43,8 @@ const RentalTimelinePage = () => {
         />
       </div>
       <div className={styles.pageNavigation}>
-        <Button
-          onClick={() => navigate("/number-of-people")}
-          buttonText="Tillbaka"
-        />
-        <Button
-          onClick={() => navigate("/payment")}
-          buttonText="Spara & fortsätt"
-        />
+        <Button onClick={() => navigate("/number-of-people")}>Tillbaka</Button>
+        <Button onClick={() => navigate("/payment")}>Spara & fortsätt</Button>
       </div>
       <MenuButton onClick={() => setButtonMenu(true)} />
       <Menu open={buttonMenu} setOpen={setButtonMenu} />
