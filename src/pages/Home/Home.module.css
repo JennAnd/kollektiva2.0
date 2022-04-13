@@ -1,4 +1,11 @@
-.title {
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+title {
   width: 361px;
   font-size: 48px;
   line-height: 1;

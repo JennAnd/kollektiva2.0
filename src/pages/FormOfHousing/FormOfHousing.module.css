@@ -2,7 +2,12 @@
   display: flex;
   flex-direction: column;
 }
-
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .marginWrapper {
   margin: 16px;
 }
@@ -21,7 +26,8 @@
 }
 
 .pageNavigation {
+  width: 408px;
   display: flex;
   justify-content: space-between;
-  margin-top: 2px;
+  margin-top: 65px;
 }

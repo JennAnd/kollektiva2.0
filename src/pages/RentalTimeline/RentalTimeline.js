@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import "react-datepicker/dist/react-datepicker.css";
 import Menu from "../../components/Menu/Menu";
 import MenuButton from "../../components/MenuButton/MenuButton";
+import MenuDesktop from "../../components/MenuDesktop/MenuDesktop";
 
 const RentalTimelinePage = () => {
   const [startDate, setStartDate] = useState(new Date("2022/01/01"));
@@ -16,6 +17,7 @@ const RentalTimelinePage = () => {
 
   return (
     <div className={styles.choice}>
+      <MenuDesktop />
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
@@ -24,79 +26,44 @@ const RentalTimelinePage = () => {
         </div>
         <p className={styles.steps}>Steg 6 av 14</p>
         <div className={styles.blueLine}></div>
-        <h1 className={styles.title}>Tidsperiod</h1>
-        <p className={styles.text}>
-          Välj hur länge du vill hyra ut din bostad.
-        </p>
-        <div className={styles.datePickerContainerStart}>
-          <label for="startDate" className={styles.textDatePicker}>
-            Från:
-          </label>
-          <DatePicker
-            selected={startDate}
-            onChange={(date) => setStartDate(date)}
-            selectsStart
-            startDate={startDate}
-            endDate={endDate}
-          />
-        </div>
-        <div className={styles.datePickerContainerEnd}>
-          <label for="endDate" className={styles.textDatePicker}>
-            Till:
-          </label>
-          <DatePicker
-            selected={endDate}
-            onChange={(date) => setEndDate(date)}
-            selectsEnd
-            startDate={startDate}
-            endDate={endDate}
-            minDate={startDate}
-          />
-        </div>
-        <div className={styles.pageNavigation}>
-          <Button
-            handleClick={() => navigate("/number-of-people")}
-            buttonText="Tillbaka"
-          />
-          <Button
-            handleClick={() => navigate("/payment")}
-            buttonText="Spara & fortsätt"
-          />
-        </div>
-        <h1 className={styles.title}>Tidsperiod</h1>
-        <p className={styles.text}>
-          Välj hur länge du vill hyra ut din bostad.
-        </p>
-        <div className={styles.datePickerContainerStart}>
-          <label for="startDate" className={styles.textDatePicker}>
-            Från:
-          </label>
-          <DatePicker
-            selected={startDate}
-            onChange={(date) => setStartDate(date)}
-            selectsStart
-            startDate={startDate}
-            endDate={endDate}
-          />
-        </div>
-        <div className={styles.datePickerContainerEnd}>
-          <label for="endDate" className={styles.textDatePicker}>
-            Till:
-          </label>
-          <DatePicker
-            selected={endDate}
-            onChange={(date) => setEndDate(date)}
-            selectsEnd
-            startDate={startDate}
-            endDate={endDate}
-            minDate={startDate}
-          />
-        </div>
-        <div className={styles.pageNavigation}>
-          <Button onClick={() => navigate("/number-of-people")}>
-            Tillbaka
-          </Button>
-          <Button onClick={() => navigate("/payment")}>Spara & fortsätt</Button>
+        <div className={styles.section}>
+          <h1 className={styles.title}>Tidsperiod</h1>
+          <p className={styles.text}>
+            Välj hur länge du vill hyra ut din bostad.
+          </p>
+          <div className={styles.datePickerContainerStart}>
+            <label for="startDate" className={styles.textDatePicker}>
+              Från:
+            </label>
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+              selectsStart
+              startDate={startDate}
+              endDate={endDate}
+            />
+          </div>
+          <div className={styles.datePickerContainerEnd}>
+            <label for="endDate" className={styles.textDatePicker}>
+              Till:
+            </label>
+            <DatePicker
+              selected={endDate}
+              onChange={(date) => setEndDate(date)}
+              selectsEnd
+              startDate={startDate}
+              endDate={endDate}
+              minDate={startDate}
+            />
+          </div>
+          <div className={styles.pageNavigation}>
+            <Button onClick={() => navigate("/number-of-people")}>
+              Tillbaka
+            </Button>
+            <Button onClick={() => navigate("/payment")}>
+              Spara & fortsätt
+            </Button>
+          </div>
         </div>
         <MenuButton onClick={() => setButtonMenu(true)} />
         <Menu open={buttonMenu} setOpen={setButtonMenu} />

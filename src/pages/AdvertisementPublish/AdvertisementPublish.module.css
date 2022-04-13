@@ -3,6 +3,13 @@
   flex-direction: column;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .marginWrapper {
   margin: 16px;
 }

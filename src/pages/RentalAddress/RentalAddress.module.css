@@ -3,6 +3,13 @@
   flex-direction: column;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .marginWrapper {
   margin: 16px;
 }
@@ -43,6 +50,8 @@
   font-size: 18px;
 }
 .pageNavigation {
+  width: 408px;
   display: flex;
   justify-content: space-between;
+  margin-top: 65px;
 }
