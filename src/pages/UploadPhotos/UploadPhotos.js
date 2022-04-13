@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./UploadPhotos.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const UploadPhotosPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <div className={styles.marginWrapper}>
@@ -118,6 +121,22 @@ const UploadPhotosPage = (props) => {
           <textarea cols="50" rows="16" />
         </form>
       </div>
+      <img />
+      <img />
+      <img />
+      <img />
+      <h3 className={styles.subTitle}>Beskriv rummet</h3>
+      <form>
+        <textarea cols="50" rows="16" />
+      </form>
+      <div className={styles.pageNavigation}>
+        <Button onClick={() => navigate("payment")}>Tillbaka</Button>
+        <Button onClick={() => navigate("/facts-and-facilities")}>
+          Fortsätt
+        </Button>
+      </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

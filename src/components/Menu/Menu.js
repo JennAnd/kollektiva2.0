@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./Menu.module.css";
 import addHome from "../../assets/images/add-home.svg";
 import myPage from "../../assets/images/my-page.svg";
@@ -32,7 +31,7 @@ const Menu = (props) => {
         </ul>
         <button className={styles.openBtn} onClick={() => props.setOpen(false)}>
           {" "}
-          <img src={menuOpen} alt="text close and an x"></img>
+          <img src={menuOpen} alt="text close and an x" />
         </button>
       </nav>
     </div>

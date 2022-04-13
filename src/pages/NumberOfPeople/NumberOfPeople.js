@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./NumberOfPeople.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const NumberOfPeoplePage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
+
   return (
     <div className={styles.choice}>
       <div className={styles.marginWrapper}>
@@ -30,6 +34,28 @@ const NumberOfPeoplePage = (props) => {
             buttonText="Spara & fortsätt"
           />
         </div>
+        <div className={styles.container}>
+          <button className={styles.boxStart}>1</button>
+          <button className={styles.box}>2</button>
+          <button className={styles.box}>3</button>
+          <button className={styles.box}>4</button>
+          <button className={styles.box}>5</button>
+          <button className={styles.box}>6</button>
+          <button className={styles.box}>7</button>
+          <button className={styles.boxEnd}>+8</button>
+        </div>
+        <div className={styles.pageNavigation}>
+          <Button
+            onClick={() => navigate("/form-of-housing")}
+            buttonText="Tillbaka"
+          />
+          <Button
+            onClick={() => navigate("/rental-timeline")}
+            buttonText="Spara & fortsätt"
+          />
+        </div>
+        <MenuButton onClick={() => setButtonMenu(true)} />
+        <Menu open={buttonMenu} setOpen={setButtonMenu} />
       </div>
       <Footer />
     </div>

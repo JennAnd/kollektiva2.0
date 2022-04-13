@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalAddress.module.css";
 import Button from "../../components/Button/Button";
@@ -7,8 +7,11 @@ import ArrowRight from "../../assets/images/arrow-right.svg";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const RentalAddressPage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
+
   return (
     <div className={styles.choice}>
       <div className={styles.marginWrapper}>
@@ -52,6 +55,17 @@ const RentalAddressPage = (props) => {
         </div>
         <Menu />
       </div>
+      <div className={styles.pageNavigation}>
+        <Button onClick={() => navigate("/")}>
+          <img src={ArrowLeft} alt="arrow points to left" />
+          Tillbaka
+        </Button>
+        <Button onClick={() => navigate("/rental-size")}>
+          Fortsätt <img src={ArrowRight} alt="arrow points to right" />
+        </Button>
+      </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

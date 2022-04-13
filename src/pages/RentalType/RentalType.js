@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalType.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import Footer from "../../components/Footer/Footer";
+import Menu from "../../components/Menu/Menu";
+import MenuButton from "../../components/MenuButton/MenuButton";
 
 const RentalTypePage = (props) => {
+  const [buttonMenu, setButtonMenu] = useState(false);
   return (
     <div className={styles.choice}>
       <div className={styles.marginWrapper}>
@@ -75,6 +78,18 @@ const RentalTypePage = (props) => {
             buttonText="Spara & fortsätt"
           />
         </div>
+        <div className={styles.pageNavigation}>
+          <Button
+            onClick={() => navigate("/rental-size")}
+            buttonText="Tillbaka"
+          />
+          <Button
+            onClick={() => navigate("/form-of-housing")}
+            buttonText="Spara & fortsätt"
+          />
+        </div>
+        <MenuButton onClick={() => setButtonMenu(true)} />
+        <Menu open={buttonMenu} setOpen={setButtonMenu} />
       </div>
       <Footer />
     </div>
