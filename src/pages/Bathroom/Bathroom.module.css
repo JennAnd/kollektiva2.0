@@ -1,6 +1,9 @@
 .choice {
   display: flex;
   flex-direction: column;
+}
+
+.marginWrapper {
   margin: 16px;
 }
 
