@@ -1,9 +1,10 @@
 .menu {
   width: 100%;
   height: 70px;
-  background-color: #6b51ef;
+  background-color: white;
   display: flex;
   justify-content: flex-end;
+  border-bottom: 2px solid black;
 }
 
 .ul {
