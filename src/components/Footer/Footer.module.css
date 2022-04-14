@@ -67,6 +67,7 @@ a:hover {
   line-height: 21px;
   color: black;
   margin-top: 2px;
+  width: 258px;
 }
 
 .contacts {
@@ -105,8 +106,56 @@ a:hover {
   margin-bottom: 12px;
 }
 
+.rentOut {
+  display: flex;
+  flex-direction: column;
+}
+
+.rent {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (min-width: 750px) {
   .copyright {
     height: 40px;
+  }
+  .contactUs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contactUsText {
+    flex-direction: column;
+    width: 165px;
+    margin: 12px 0px 0px 0px;
+  }
+  .contactLinks {
+    flex-direction: column;
+    margin: 50px 16px 0px 0px;
+  }
+  .linkPage {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 32px 0px 32px;
+  }
+  .socialMediaText {
+  }
+  .socialMedia {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 32px 0px 32px;
+  }
+  .socialMediaLinks {
+    flex-direction: column;
+    margin: 24px 57px 0px 0px;
   }
 }
