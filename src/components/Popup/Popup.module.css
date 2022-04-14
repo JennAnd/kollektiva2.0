@@ -14,9 +14,8 @@
 }
 .popupInner {
   position: relative;
-  padding: 32px;
-  width: 324px;
-  height: 297px;
+  width: 396px;
+  height: 361px;
   background-color: white;
   border-radius: 16px;
   display: flex;
