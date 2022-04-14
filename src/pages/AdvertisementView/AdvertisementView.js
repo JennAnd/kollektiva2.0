@@ -57,9 +57,14 @@ const AdvertisementViewPage = (props) => {
               Det går att uppdatera delar av din annons senare på mina sidor.
             </p>
             <p>Kontakta oss om du behöver hjälp med din annos.</p>
-            <Button onClick={() => navigate("/advertisement-publish")}>
-              Publicera min annons nu
-            </Button>
+            <div className={styles.containerBtn}>
+              <button
+                className={styles.btn}
+                onClick={() => navigate("/advertisement-publish")}
+              >
+                Publicera min annons nu
+              </button>
+            </div>
           </Popup>
         </div>
       </div>
