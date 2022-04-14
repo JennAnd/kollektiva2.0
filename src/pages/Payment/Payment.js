@@ -3,6 +3,8 @@ import { navigate } from "@reach/router";
 import styles from "./Payment.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import ArrowLeft from "../../assets/images/arrow-left.svg";
+import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
 import MenuButton from "../../components/MenuButton/MenuButton";
@@ -42,12 +44,19 @@ const PaymentPage = (props) => {
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/rental-timeline")}
+              icon={ArrowLeft}
+              bg="white"
+              border="2px solid #3A0067"
+              color="#3A0067"
               buttonText="Tillbaka"
-            />
+              flexDirection="row"
+            ></Button>
             <Button
               onClick={() => navigate("/upload-photos")}
-              buttonText="Spara & fortsätt"
-            />
+              buttonText="Fortsätt"
+              icon={ArrowRight}
+              flexDirection="row-reverse"
+            ></Button>
           </div>
         </div>
         <MenuButton onClick={() => setButtonMenu(true)} />

@@ -4,6 +4,8 @@ import styles from "./Outside.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import ArrowLeft from "../../assets/images/arrow-left.svg";
+import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
 import MenuButton from "../../components/MenuButton/MenuButton";
@@ -44,12 +46,19 @@ const OutsidePage = (props) => {
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/kitchen")}
+              icon={ArrowLeft}
+              bg="white"
+              border="2px solid #3A0067"
+              color="#3A0067"
               buttonText="Tillbaka"
-            />
+              flexDirection="row"
+            ></Button>
             <Button
               onClick={() => navigate("/description")}
-              buttonText="Spara & fortsätt"
-            />
+              buttonText="Fortsätt"
+              icon={ArrowRight}
+              flexDirection="row-reverse"
+            ></Button>
           </div>
         </div>
         <MenuButton onClick={() => setButtonMenu(true)} />
