@@ -46,20 +46,27 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: 700px;
+  padding: 30px 39px 0px 35px;
 }
 
 .choice p {
   font-size: 20px;
   line-height: 24px;
   font-weight: 500px;
+  padding: 0px 39px 0px 35px;
 }
 
-/* .choice button {
-  font-size: 20px;
+.containerBtn {
+  padding: 8px 16px 16px 16px;
+}
+
+.btn {
+  font-size: 16px;
   line-height: 24px;
   background-color: white;
   border-radius: 8px;
   border: 2px solid black;
   height: 56px;
-  width: 300px;
-} */
+  width: 364px;
+  padding: 0px 16px 0px 16px;
+}
