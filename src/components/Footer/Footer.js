@@ -5,15 +5,18 @@ import twitter from "../../assets/images/twitter.svg";
 import instagram from "../../assets/images/instagram.svg";
 import phone from "../../assets/images/phone.svg";
 import mail from "../../assets/images/mail.svg";
+import logo from "../../assets/images/logo.svg";
 
 const Footer = () => {
   return (
     <footer>
       <div className={styles.contactUs}>
-        <h2 className={styles.companyName}>Kollektiva</h2>
+        <div className={styles.logo}>
+          <img src={logo} alt="a big k in purple and white" />
+        </div>
         <div className={styles.contactUsText}>
           <h3 className={styles.subheading}>Kontakta oss</h3>
-          <p className={styles.text}>
+          <p className={styles.textContactUs}>
             Kontakta oss vid behov av hjälp med registering, annonsering och
             övrigt
           </p>
@@ -73,8 +76,8 @@ const Footer = () => {
           <a href="/" className={styles.textInfo}>
             Tillgänglighet
           </a>
-          <a href="/" className={styles.textInfoLast}>
-            {/* Hjälp och guide{" "} */}Säkerhetsinformation
+          <a href="/" className={styles.textInfo}>
+            Säkerhetsinformation
           </a>
         </div>
       </div>
