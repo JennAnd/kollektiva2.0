@@ -44,7 +44,7 @@ const PaymentPage = (props) => {
 
           <div className={styles.pageNavigation}>
             <Button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/notice-period")}
               icon={ArrowLeft}
               bg="white"
               border="4px solid #3A0067"

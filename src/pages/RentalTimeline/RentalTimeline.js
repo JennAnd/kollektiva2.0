@@ -78,7 +78,7 @@ const RentalTimelinePage = () => {
               flexDirection="row"
             ></Button>
             <Button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/notice-period")}
               buttonText="Fortsätt"
               icon={ArrowRight}
               flexDirection="row-reverse"
