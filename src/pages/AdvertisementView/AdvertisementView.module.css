@@ -43,10 +43,10 @@
 }
 
 .choice h3 {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700px;
-  padding: 30px 39px 0px 35px;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 800;
+  padding: 45px 39px 0px 35px;
 }
 
 .choice p {
@@ -57,16 +57,24 @@
 }
 
 .containerBtn {
-  padding: 8px 16px 16px 16px;
+  padding: 41px 0px 0px 16px;
 }
 
 .btn {
   font-size: 16px;
   line-height: 24px;
-  background-color: white;
+  background-color: #6b51ef;
+  color: white;
   border-radius: 8px;
-  border: 2px solid black;
+  border: 2px solid white;
   height: 56px;
   width: 364px;
   padding: 0px 16px 0px 16px;
+}
+
+.pageNavigation {
+  width: 408px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
 }

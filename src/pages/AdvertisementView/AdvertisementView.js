@@ -4,6 +4,8 @@ import styles from "./AdvertisementView.module.css";
 import Button from "../../components/Button/Button";
 /* import houseView from "./../../assets/images/houseView.png"; */
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import ArrowLeft from "../../assets/images/arrow-left.svg";
+import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
 import Popup from "../../components/Popup/Popup";
 import Menu from "../../components/Menu/Menu";
@@ -52,11 +54,11 @@ const AdvertisementViewPage = (props) => {
           <p className={styles.smallText}>Microvågsugn</p>
           <Button onClick={() => setButtonPopup(true)}>Open popup</Button>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-            <h3>Är du nöjd med din annons?</h3>
+            <h3>Är du redo att publicera din annons?</h3>
+            <p>Det går att uppdatera din annons senare via mina sidor.</p>
             <p>
-              Det går att uppdatera delar av din annons senare på mina sidor.
+              Tveka inte att kontakta oss om du behöver hjälp med din annons.
             </p>
-            <p>Kontakta oss om du behöver hjälp med din annos.</p>
             <div className={styles.containerBtn}>
               <button
                 className={styles.btn}
@@ -66,6 +68,23 @@ const AdvertisementViewPage = (props) => {
               </button>
             </div>
           </Popup>
+          <div className={styles.pageNavigation}>
+            <Button
+              onClick={() => navigate("/description")}
+              icon={ArrowLeft}
+              bg="white"
+              border="2px solid #3A0067"
+              color="#3A0067"
+              buttonText="Tillbaka"
+              flexDirection="row"
+            ></Button>
+            <Button
+              onClick={() => setButtonPopup(true)}
+              buttonText="Fortsätt"
+              icon={ArrowRight}
+              flexDirection="row-reverse"
+            ></Button>
+          </div>
         </div>
       </div>
       <MenuButton onClick={() => setButtonMenu(true)} />
