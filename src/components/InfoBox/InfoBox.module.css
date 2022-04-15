@@ -1,0 +1,19 @@
+.infoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 396px;
+  height: 70px;
+  background-color: #ded1e9;
+  border-radius: 8px;
+  margin-top: 44px;
+}
+
+.lightSymbol {
+  padding-left: 4%;
+}
+.infoText {
+  font-size: 16px;
+  padding-left: 4%;
+  padding-right: 4%;
+}

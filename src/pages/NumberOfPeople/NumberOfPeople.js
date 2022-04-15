@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./NumberOfPeople.module.css";
 import Button from "../../components/Button/Button";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
@@ -37,6 +38,12 @@ const NumberOfPeoplePage = (props) => {
             <button className={styles.box}>5</button>
             <button className={styles.boxEnd}>+6</button>
           </div>
+
+          <InfoBox
+            text="Tänk på att det måste finnas sovplatser till varje hyresgäst. Vi rekommenderar minst 10 kvm per person."
+            /* height="93px" */
+          ></InfoBox>
+
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/rental-size")}

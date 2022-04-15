@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalSize.module.css";
 import Button from "../../components/Button/Button";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
@@ -56,6 +57,12 @@ const RentalSizePage = (props) => {
               <p className={styles.textSize}>m&sup2;</p>
             </div>
           </form>
+
+          <InfoBox
+            text="Uppge ej kvadratmeterna för de gemensamma ytorna, så som kök och vardagsrum."
+            /* height="93px" */
+          ></InfoBox>
+
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/form-of-housing")}

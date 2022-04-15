@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./UploadPhotos.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
@@ -28,15 +29,18 @@ const UploadPhotosPage = (props) => {
           <h1 className={styles.title}>Ladda upp bilder</h1>
           <h3 className={styles.subTitle}>Sovrum</h3>
 
+          <InfoBox
+            text="Ladda upp högupplösta bilder. Tänk på ljussättningen och ta bilder i olika vinklar."
+            /* height="120px" */
+          ></InfoBox>
+
           <div className={styles.uploadPhotos}>
             <Button
-              /* handleClick={() => navigate("/bathroom")} */
               buttonText="Ladda upp"
               bg="white"
               border="2px solid #000000"
             />
             <Button
-              /* handleClick={() => navigate("/outside")} */
               buttonText="Ta en bild"
               bg="white"
               border="2px solid #000000"
@@ -134,6 +138,11 @@ const UploadPhotosPage = (props) => {
           <form>
             <textarea cols="50" rows="16" />
           </form>
+
+          <InfoBox
+            text="Glöm inte att markera annonsens omslagsbild genom att trycka på stjärnan."
+            /* height="120px" */
+          ></InfoBox>
 
           <div className={styles.pageNavigation}>
             <Button

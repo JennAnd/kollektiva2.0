@@ -4,6 +4,7 @@ import { navigate } from "@reach/router";
 import styles from "./RentalTimeline.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
@@ -60,6 +61,12 @@ const RentalTimelinePage = () => {
               />
             </div>
           </div>
+
+          <InfoBox
+            text="Vi rekommenderar att du hyr ut bostaden från första dagen i varje månad för att du ska kunna ta betalt månadsvis. Dina chanser för uthyrning ökar om du hyr ut din bostad minst 3 månader."
+            /* height="120px" */
+          ></InfoBox>
+
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/number-of-people")}

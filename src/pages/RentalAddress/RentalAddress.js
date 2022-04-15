@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./RentalAddress.module.css";
 import Button from "../../components/Button/Button";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import ContinueClose from "../../assets/images/continue-closed.svg";
@@ -46,6 +47,8 @@ const RentalAddressPage = (props) => {
             </label>
             <input className={styles.input} type="text" id="address" />
           </form>
+
+          <InfoBox text="Din fullständiga adress kommer ej synas i annonsen."></InfoBox>
 
           <div className={styles.pageNavigation}>
             <Button

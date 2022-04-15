@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./FormOfHousing.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
@@ -28,22 +29,19 @@ const FormOfHousingPage = (props) => {
           <h1 className={styles.title}>Boendeform</h1>
           <p className={styles.text}>Boendeform</p>
           <form>
-            <RadioButton
-              id="formOfHousing"
-              value="Bostadsrätt"
-              /* name="formOfHousing" */
-            ></RadioButton>
-            <RadioButton
-              id="formOfHousing"
-              value="Hyresrätt"
-              /* name="formOfHousing" */
-            ></RadioButton>
+            <RadioButton id="formOfHousing" value="Bostadsrätt"></RadioButton>
+            <RadioButton id="formOfHousing" value="Hyresrätt"></RadioButton>
             <RadioButton
               id="formOfHousing"
               value="Villa eller äganderätt"
-              /* name="formOfHousing" */
             ></RadioButton>
           </form>
+
+          <InfoBox
+            text="Tänk på att du i vissa fall måste ha ett godkännande av din hyresvärd för att ha en extra hyresgäst inneboende."
+            height="93px"
+          ></InfoBox>
+
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/rental-type")}

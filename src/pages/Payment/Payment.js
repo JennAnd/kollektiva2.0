@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./Payment.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
@@ -35,6 +36,11 @@ const PaymentPage = (props) => {
               <p className={styles.textPrice}>Kr</p>
             </div>
           </form>
+
+          <InfoBox
+            text="Räkna ut vilket pris du bör sätta i hyra genom att ta hjälp av Kollektivas bostadskalkyl."
+            /* height="120px" */
+          ></InfoBox>
 
           <div className={styles.pageNavigation}>
             <Button

@@ -4,6 +4,7 @@ import styles from "./RentalType.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
@@ -37,6 +38,8 @@ const RentalTypePage = (props) => {
             <RadioButton id="rentalType" value="Lägenheten"></RadioButton>
             <RadioButton id="rentalType" value="Loftgångshus"></RadioButton>
           </form>
+
+          <InfoBox text="Du kan endast välja en form av bostad."></InfoBox>
 
           <div className={styles.pageNavigation}>
             <Button

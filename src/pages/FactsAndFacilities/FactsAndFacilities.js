@@ -4,6 +4,7 @@ import styles from "./FactsAndFacilities.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
@@ -45,6 +46,11 @@ const FactsAndFacilitiesPage = (props) => {
             <RadioButton id="factsAndFacilities" value="Garage"></RadioButton>
             <RadioButton id="factsAndFacilities" value="Wifi"></RadioButton>
           </form>
+
+          <InfoBox
+            text="Du kan kryssa i flera alternativ här."
+            /* height="93px" */
+          ></InfoBox>
 
           <div className={styles.pageNavigation}>
             <Button
