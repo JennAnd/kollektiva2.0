@@ -27,51 +27,16 @@ const BathroomPage = (props) => {
         <div className={styles.section}>
           <h1 className={styles.title}>Badrum</h1>
           <form>
-            <RadioButton
-              id="bathroom"
-              value="Toalett"
-              name="bathroom"
-            ></RadioButton>
-            <RadioButton
-              id="bathroom"
-              value="Badkar"
-              name="bathroom"
-            ></RadioButton>
-            <RadioButton
-              id="bathroom"
-              value="Dusch"
-              name="bathroom"
-            ></RadioButton>
-            <RadioButton
-              id="bathroom"
-              value="Handdukstorkare"
-              name="bathroom"
-            ></RadioButton>
-            <RadioButton
-              id="bathroom"
-              value="Tvättmaskin"
-              name="bathroom"
-            ></RadioButton>
-            <RadioButton
-              id="bathroom"
-              value="Torktumlare"
-              name="bathroom"
-            ></RadioButton>
-            <RadioButton
-              id="bathroom"
-              value="Toalettarmstöd"
-              name="bathroom"
-            ></RadioButton>
-            <RadioButton
-              id="bathroom"
-              value="Duschbänk"
-              name="bathroom"
-            ></RadioButton>
+            <RadioButton id="bathroom" value="Toalett"></RadioButton>
+            <RadioButton id="bathroom" value="Badkar"></RadioButton>
+            <RadioButton id="bathroom" value="Dusch"></RadioButton>
+            <RadioButton id="bathroom" value="Handdukstorkare"></RadioButton>
+            <RadioButton id="bathroom" value="Tvättmaskin"></RadioButton>
+            <RadioButton id="bathroom" value="Torktumlare"></RadioButton>
+            <RadioButton id="bathroom" value="Toalettarmstöd"></RadioButton>
+            <RadioButton id="bathroom" value="Duschbänk"></RadioButton>
           </form>
 
-          {/* <div class="helpButton">
-        <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
-      </div> */}
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/facts-and-facilities")}

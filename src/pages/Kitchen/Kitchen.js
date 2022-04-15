@@ -27,38 +27,14 @@ const KitchenPage = (props) => {
         <div className={styles.section}>
           <h1 className={styles.title}>Kök</h1>
           <form>
-            <RadioButton
-              id="kitchen"
-              value="Diskmaskin"
-              name="kitchen"
-            ></RadioButton>
-            <RadioButton id="kitchen" value="Kyl" name="kitchen"></RadioButton>
-            <RadioButton id="kitchen" value="Frys" name="kitchen"></RadioButton>
-            <RadioButton
-              id="kitchen"
-              value="Ugn/Spis"
-              name="kitchen"
-            ></RadioButton>
-            <RadioButton
-              id="kitchen"
-              value="Köksfläkt"
-              name="kitchen"
-            ></RadioButton>
-            <RadioButton
-              id="kitchen"
-              value="Microvågsugn"
-              name="kitchen"
-            ></RadioButton>
-            <RadioButton
-              id="kitchen"
-              value="Kaffebryggare"
-              name="kitchen"
-            ></RadioButton>
-            <RadioButton
-              id="kitchen"
-              value="Vattenkokare"
-              name="kitchen"
-            ></RadioButton>
+            <RadioButton id="kitchen" value="Diskmaskin"></RadioButton>
+            <RadioButton id="kitchen" value="Kyl"></RadioButton>
+            <RadioButton id="kitchen" value="Frys"></RadioButton>
+            <RadioButton id="kitchen" value="Ugn/Spis"></RadioButton>
+            <RadioButton id="kitchen" value="Köksfläkt"></RadioButton>
+            <RadioButton id="kitchen" value="Microvågsugn"></RadioButton>
+            <RadioButton id="kitchen" value="Kaffebryggare"></RadioButton>
+            <RadioButton id="kitchen" value="Vattenkokare"></RadioButton>
           </form>
           <div className={styles.pageNavigation}>
             <Button

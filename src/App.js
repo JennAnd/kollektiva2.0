@@ -6,11 +6,12 @@ import { Router } from "@reach/router";
 import HomePage from "./pages/Home/Home";
 import FindFriendsPage from "./pages/FindFriends/FindFriends";
 import RentalAddressPage from "./pages/RentalAddress/RentalAddress";
-import RentalSizePage from "./pages/RentalSize/RentalSize";
 import RentalTypePage from "./pages/RentalType/RentalType";
 import FormOfHousingPage from "./pages/FormOfHousing/FormOfHousing";
+import RentalSizePage from "./pages/RentalSize/RentalSize";
 import NumberOfPeoplePage from "./pages/NumberOfPeople/NumberOfPeople";
 import RentalTimelinePage from "./pages/RentalTimeline/RentalTimeline";
+//uppsägningstid//
 import PaymentPage from "./pages/Payment/Payment";
 import UploadPhotosPage from "./pages/UploadPhotos/UploadPhotos";
 import FactsAndFacilitiesPage from "./pages/FactsAndFacilities/FactsAndFacilities";
@@ -29,11 +30,12 @@ const App = () => {
         <HomePage path="/" />
         <FindFriendsPage path="/find-friends" />
         <RentalAddressPage path="/rental-address" />
-        <RentalSizePage path="/rental-size" />
         <RentalTypePage path="/rental-type" />
         <FormOfHousingPage path="/form-of-housing" />
+        <RentalSizePage path="/rental-size" />
         <NumberOfPeoplePage path="/number-of-people" />
         <RentalTimelinePage path="/rental-timeline" />
+        //uppsägningstid//
         <PaymentPage path="/payment" />
         <UploadPhotosPage path="/upload-photos" />
         <FactsAndFacilitiesPage path="/facts-and-facilities" />

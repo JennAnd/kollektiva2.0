@@ -31,17 +31,17 @@ const FormOfHousingPage = (props) => {
             <RadioButton
               id="formOfHousing"
               value="Bostadsrätt"
-              name="formOfHousing"
+              /* name="formOfHousing" */
             ></RadioButton>
             <RadioButton
               id="formOfHousing"
               value="Hyresrätt"
-              name="formOfHousing"
+              /* name="formOfHousing" */
             ></RadioButton>
             <RadioButton
               id="formOfHousing"
               value="Villa eller äganderätt"
-              name="formOfHousing"
+              /* name="formOfHousing" */
             ></RadioButton>
           </form>
           <div className={styles.pageNavigation}>

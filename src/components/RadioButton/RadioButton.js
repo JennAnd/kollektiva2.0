@@ -2,10 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./RadioButton.module.css";
 
-const RadioButton = ({ value, name, id }) => {
+const RadioButton = ({ value, id }) => {
   return (
     <div className={styles.inputBox}>
-      <input className={styles.input} type="radio" id={id} name={name}></input>
+      <input
+        className={styles.input}
+        type="radio"
+        id={id} /* name={name} */
+      ></input>
       <label htmlFor={id}>{value}</label>
     </div>
   );

@@ -27,21 +27,9 @@ const OutsidePage = (props) => {
         <div className={styles.section}>
           <h1 className={styles.title}>Utomhus</h1>
           <form>
-            <RadioButton
-              id="outside"
-              value="Balkong"
-              name="outside"
-            ></RadioButton>
-            <RadioButton
-              id="outside"
-              value="Trädgård"
-              name="outside"
-            ></RadioButton>
-            <RadioButton
-              id="outside"
-              value="Altan"
-              name="outside"
-            ></RadioButton>
+            <RadioButton id="outside" value="Balkong"></RadioButton>
+            <RadioButton id="outside" value="Trädgård"></RadioButton>
+            <RadioButton id="outside" value="Altan"></RadioButton>
           </form>
           <div className={styles.pageNavigation}>
             <Button

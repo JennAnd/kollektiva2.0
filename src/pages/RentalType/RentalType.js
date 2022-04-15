@@ -28,46 +28,14 @@ const RentalTypePage = (props) => {
           <h1 className={styles.title}>Typ av bostad</h1>
           <p className={styles.text}>Välj vilken typ av bostad du hyr ut.</p>
           <form>
-            <RadioButton
-              id="rentalType"
-              value="Villa"
-              name="rentalType"
-            ></RadioButton>
-            <RadioButton
-              id="rentalType"
-              value="Hus"
-              name="rentalType"
-            ></RadioButton>
-            <RadioButton
-              id="rentalType"
-              value="Radhus"
-              name="rentalType"
-            ></RadioButton>
-            <RadioButton
-              id="rentalType"
-              value="Stuga"
-              name="rentalType"
-            ></RadioButton>
-            <RadioButton
-              id="rentalType"
-              value="Parhus"
-              name="rentalType"
-            ></RadioButton>
-            <RadioButton
-              id="rentalType"
-              value="Korridorsrum"
-              name="rentalType"
-            ></RadioButton>
-            <RadioButton
-              id="rentalType"
-              value="Lägenheten"
-              name="rentalType"
-            ></RadioButton>
-            <RadioButton
-              id="rentalType"
-              value="Loftgångshus"
-              name="rentalType"
-            ></RadioButton>
+            <RadioButton id="rentalType" value="Villa"></RadioButton>
+            <RadioButton id="rentalType" value="Hus"></RadioButton>
+            <RadioButton id="rentalType" value="Radhus"></RadioButton>
+            <RadioButton id="rentalType" value="Stuga"></RadioButton>
+            <RadioButton id="rentalType" value="Parhus"></RadioButton>
+            <RadioButton id="rentalType" value="Korridorsrum"></RadioButton>
+            <RadioButton id="rentalType" value="Lägenheten"></RadioButton>
+            <RadioButton id="rentalType" value="Loftgångshus"></RadioButton>
           </form>
 
           <div className={styles.pageNavigation}>

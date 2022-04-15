@@ -46,9 +46,6 @@ const FactsAndFacilitiesPage = (props) => {
             <RadioButton id="factsAndFacilities" value="Wifi"></RadioButton>
           </form>
 
-          {/* <div class="helpButton">
-        <Button buttonText="Hjälp" bg="white" border="2px solid #000000" />
-      </div> */}
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/upload-photos")}
