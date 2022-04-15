@@ -4,6 +4,7 @@ import styles from "./Outside.module.css";
 import Button from "../../components/Button/Button";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import SupportButton from "../../components/SupportButton/SupportButton";
 import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
@@ -21,7 +22,7 @@ const OutsidePage = (props) => {
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
           <p className={styles.continue}>Fortsätt</p>
-          <Button>Hjälp</Button>
+          <SupportButton></SupportButton>
         </div>
         <p className={styles.steps}>Steg 12 av 14</p>
         <div className={styles.blueLine}></div>

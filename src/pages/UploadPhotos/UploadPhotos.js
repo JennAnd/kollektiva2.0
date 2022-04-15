@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import styles from "./UploadPhotos.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import SupportButton from "../../components/SupportButton/SupportButton";
 import InfoBox from "../../components/InfoBox/InfoBox";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
@@ -20,7 +21,7 @@ const UploadPhotosPage = (props) => {
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
           <p className={styles.continue}>Fortsätt</p>
-          <Button>Hjälp</Button>
+          <SupportButton></SupportButton>
         </div>
         <p className={styles.steps}>Steg 8 av 14</p>
         <div className={styles.blueLine}></div>

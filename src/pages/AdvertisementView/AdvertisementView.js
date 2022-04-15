@@ -4,6 +4,7 @@ import styles from "./AdvertisementView.module.css";
 import Button from "../../components/Button/Button";
 /* import houseView from "./../../assets/images/houseView.png"; */
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import SupportButton from "../../components/SupportButton/SupportButton";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
@@ -22,7 +23,7 @@ const AdvertisementViewPage = (props) => {
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
           <p className={styles.continue}>Fortsätt</p>
-          <Button>Hjälp</Button>
+          <SupportButton></SupportButton>
         </div>
         <p className={styles.steps}>Steg 14 av 14</p>
         <div className={styles.blueLine}></div>
