@@ -11,6 +11,7 @@ import FormOfHousingPage from "./pages/FormOfHousing/FormOfHousing";
 import RentalSizePage from "./pages/RentalSize/RentalSize";
 import NumberOfPeoplePage from "./pages/NumberOfPeople/NumberOfPeople";
 import RentalTimelinePage from "./pages/RentalTimeline/RentalTimeline";
+import NoticePeriod from "./pages/NoticePeriod/NoticePeriod";
 import PaymentPage from "./pages/Payment/Payment";
 import UploadPhotosPage from "./pages/UploadPhotos/UploadPhotos";
 import FactsAndFacilitiesPage from "./pages/FactsAndFacilities/FactsAndFacilities";
@@ -34,6 +35,7 @@ const App = () => {
         <RentalSizePage path="/rental-size" />
         <NumberOfPeoplePage path="/number-of-people" />
         <RentalTimelinePage path="/rental-timeline" />
+        <NoticePeriod path="/notice-period" />
         <PaymentPage path="/payment" />
         <UploadPhotosPage path="/upload-photos" />
         <FactsAndFacilitiesPage path="/facts-and-facilities" />

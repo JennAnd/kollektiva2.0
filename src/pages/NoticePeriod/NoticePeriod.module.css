@@ -1,0 +1,33 @@
+.choice {
+  display: flex;
+  flex-direction: column;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.marginWrapper {
+  margin: 16px;
+}
+
+.title {
+  width: 361px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 18px;
+  width: 396px;
+  margin-bottom: 32px;
+}
+
+.pageNavigation {
+  width: 408px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}

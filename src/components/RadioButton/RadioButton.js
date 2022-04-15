@@ -17,7 +17,7 @@ const RadioButton = ({ value, id }) => {
 
 RadioButton.propTypes = {
   value: PropTypes.string,
-  name: PropTypes.string,
+  /* name: PropTypes.string, */
 };
 
 RadioButton.defaultProps = {
