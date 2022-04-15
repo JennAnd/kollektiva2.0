@@ -13,10 +13,9 @@
 }
 
 .title {
-  width: 361px;
-  font-size: 48px;
-  line-height: 1;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0px 182px 0px 0px;
 }
 
 .text {

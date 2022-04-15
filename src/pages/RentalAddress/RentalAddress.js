@@ -25,12 +25,10 @@ const RentalAddressPage = (props) => {
         <p className={styles.steps}>Steg 1 av 14</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
-          <h1 className={styles.title}>Bostadens adress</h1>
-          <p className={styles.text}>
-            Sök på din gatuadress eller skriv in den manuellt.
-          </p>
+          <h1 className={styles.title}>Adress</h1>
+          <p className={styles.text}>Skriv in bostadens fullständiga adress.</p>
           <form className={styles.form}>
-            <label className={styles.label} for="address">
+            <label className={styles.label} htmlFor="address">
               Stad
             </label>
             <input
@@ -39,15 +37,11 @@ const RentalAddressPage = (props) => {
               type="text"
               id="address"
             />
-            <label className={styles.label} for="address">
+            <label className={styles.label} htmlFor="address">
               Gatuadress
             </label>
             <input className={styles.input} type="text" id="address" />
-            <label className={styles.label} for="address">
-              Gatunummer
-            </label>
-            <input className={styles.input} type="text" id="address" />
-            <label className={styles.label} for="address">
+            <label className={styles.label} htmlFor="address">
               Postnummer
             </label>
             <input className={styles.input} type="text" id="address" />
@@ -58,13 +52,13 @@ const RentalAddressPage = (props) => {
               onClick={() => navigate("/")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"
             ></Button>
             <Button
-              onClick={() => navigate("/rental-size")}
+              onClick={() => navigate("/rental-type")}
               buttonText="Fortsätt"
               icon={ArrowRight}
               flexDirection="row-reverse"

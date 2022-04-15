@@ -36,7 +36,7 @@ const DescriptionPage = (props) => {
               onClick={() => navigate("/outside")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"

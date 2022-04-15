@@ -30,7 +30,7 @@ const RentalSizePage = (props) => {
           </p>
           <p className={styles.text}>Antal rum</p>
           <form className={styles.form}>
-            <label for="size"></label>
+            <label htmlFor="size"></label>
             <select className={styles.select}>
               <option value="size">1</option>
               <option value="size">2</option>
@@ -44,7 +44,7 @@ const RentalSizePage = (props) => {
           </form>
           <p className={styles.text}>Storlek</p>
           <form className={styles.form}>
-            <label for="size"></label>
+            <label htmlFor="size"></label>
             <select className={styles.select}>
               <option value="size">22</option>
               <option value="size">23</option>
@@ -58,16 +58,16 @@ const RentalSizePage = (props) => {
           </form>
           <div className={styles.pageNavigation}>
             <Button
-              onClick={() => navigate("/rental-address")}
+              onClick={() => navigate("/form-of-housing")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"
             ></Button>
             <Button
-              onClick={() => navigate("/rental-type")}
+              onClick={() => navigate("/number-of-people")}
               buttonText="Fortsätt"
               icon={ArrowRight}
               flexDirection="row-reverse"

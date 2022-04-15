@@ -26,10 +26,7 @@ const RentalTypePage = (props) => {
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Typ av bostad</h1>
-          <p className={styles.text}>
-            Välj vilket typ av bostad du vill hyra ut. Du kan endast annonsera
-            ett boende i taget.
-          </p>
+          <p className={styles.text}>Välj vilken typ av bostad du hyr ut.</p>
           <form>
             <RadioButton
               id="rentalType"
@@ -75,16 +72,16 @@ const RentalTypePage = (props) => {
 
           <div className={styles.pageNavigation}>
             <Button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/rental-address")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"
             ></Button>
             <Button
-              onClick={() => navigate("/rental-size")}
+              onClick={() => navigate("/form-of-housing")}
               buttonText="Fortsätt"
               icon={ArrowRight}
               flexDirection="row-reverse"

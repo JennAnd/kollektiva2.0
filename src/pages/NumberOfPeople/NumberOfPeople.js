@@ -29,8 +29,6 @@ const NumberOfPeoplePage = (props) => {
           <p className={styles.text}>
             Välj hur många som du vill hyra ut till.
           </p>
-          <p className={styles.text}>Antal personer</p>
-
           <div className={styles.container}>
             <button className={styles.boxStart}>1</button>
             <button className={styles.box}>2</button>
@@ -41,10 +39,10 @@ const NumberOfPeoplePage = (props) => {
           </div>
           <div className={styles.pageNavigation}>
             <Button
-              onClick={() => navigate("/form-of-housing")}
+              onClick={() => navigate("/rental-size")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"

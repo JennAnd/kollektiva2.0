@@ -26,37 +26,24 @@ const FactsAndFacilitiesPage = (props) => {
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Fakta och faciliteter</h1>
-          <p className={styles.text}>
-            Specificera hur ditt boende ser ut. Fyll endast i det som finns
-            tillgänligt för hyresgästen.
-          </p>
+          <p className={styles.text}>Välj vad som stämmer in på bostaden.</p>
           <h2 className={styles.subTitle}>Bekvämligheter</h2>
           <form>
             <RadioButton
               id="factsAndFacilities"
               value="Husdjur tillåtet"
-              name="factsAndFacilities"
             ></RadioButton>
+            <RadioButton id="factsAndFacilities" value="Hiss"></RadioButton>
             <RadioButton
               id="factsAndFacilities"
-              value="Hiss"
-              name="factsAndFacilities"
+              value="Rullstolsanpassad"
             ></RadioButton>
             <RadioButton
               id="factsAndFacilities"
               value="Parkering"
-              name="factsAndFacilities"
             ></RadioButton>
-            <RadioButton
-              id="factsAndFacilities"
-              value="Garage"
-              name="factsAndFacilities"
-            ></RadioButton>
-            <RadioButton
-              id="factsAndFacilities"
-              value="Lämpligt för seniorer"
-              name="factsAndFacilities"
-            ></RadioButton>
+            <RadioButton id="factsAndFacilities" value="Garage"></RadioButton>
+            <RadioButton id="factsAndFacilities" value="Wifi"></RadioButton>
           </form>
 
           {/* <div class="helpButton">
@@ -67,7 +54,7 @@ const FactsAndFacilitiesPage = (props) => {
               onClick={() => navigate("/upload-photos")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"
@@ -79,9 +66,9 @@ const FactsAndFacilitiesPage = (props) => {
               flexDirection="row-reverse"
             ></Button>
           </div>
+          <MenuButton onClick={() => setButtonMenu(true)} />
+          <Menu open={buttonMenu} setOpen={setButtonMenu} />
         </div>
-        <MenuButton onClick={() => setButtonMenu(true)} />
-        <Menu open={buttonMenu} setOpen={setButtonMenu} />
       </div>
       <Footer />
     </div>

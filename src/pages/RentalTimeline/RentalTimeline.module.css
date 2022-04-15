@@ -33,6 +33,10 @@
   margin: 0px 0px 12px 0px;
 }
 
+.datePickerContainer {
+  width: 400px;
+}
+
 .datePickerContainerStart {
   display: flex;
   flex-direction: row;

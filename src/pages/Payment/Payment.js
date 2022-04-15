@@ -29,13 +29,8 @@ const PaymentPage = (props) => {
             Ange hur mycket hyran för hyresgästen är.
           </p>
           <form className={styles.form}>
-            <label for="payment"></label>
-            <input
-              className={styles.input}
-              type="text"
-              id="payment"
-              placeholder="Skriv in månadssumman på hyran"
-            ></input>
+            <label htmlFor="payment"></label>
+            <input className={styles.input} type="text" id="payment"></input>
             <div className={styles.price}>
               <p className={styles.textPrice}>Kr</p>
             </div>
@@ -43,10 +38,10 @@ const PaymentPage = (props) => {
 
           <div className={styles.pageNavigation}>
             <Button
-              onClick={() => navigate("/rental-timeline")}
+              onClick={() => navigate("/")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"

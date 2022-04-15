@@ -49,13 +49,13 @@ const FormOfHousingPage = (props) => {
               onClick={() => navigate("/rental-type")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"
             ></Button>
             <Button
-              onClick={() => navigate("/number-of-people")}
+              onClick={() => navigate("/rental-size")}
               buttonText="Fortsätt"
               icon={ArrowRight}
               flexDirection="row-reverse"

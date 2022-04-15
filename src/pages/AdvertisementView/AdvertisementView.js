@@ -52,7 +52,6 @@ const AdvertisementViewPage = (props) => {
           <h3 className={styles.subTitle}>Utomhus</h3>
           <p className={styles.smallText}>Diskmaskin</p>
           <p className={styles.smallText}>Microvågsugn</p>
-          <Button onClick={() => setButtonPopup(true)}>Open popup</Button>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
             <h3>Är du redo att publicera din annons?</h3>
             <p>Det går att uppdatera din annons senare via mina sidor.</p>
@@ -73,7 +72,7 @@ const AdvertisementViewPage = (props) => {
               onClick={() => navigate("/description")}
               icon={ArrowLeft}
               bg="white"
-              border="2px solid #3A0067"
+              border="4px solid #3A0067"
               color="#3A0067"
               buttonText="Tillbaka"
               flexDirection="row"

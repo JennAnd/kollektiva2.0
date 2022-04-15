@@ -3,11 +3,15 @@ import styles from "./MenuDesktop.module.css";
 import addHome from "../../assets/images/add-home.svg";
 import myPage from "../../assets/images/my-page.svg";
 import searchHome from "../../assets/images/search-home.svg";
+import logo from "../../assets/images/logo.svg";
 
 const MenuDesktop = (props) => {
   return (
     <div>
       <nav className={styles.menu}>
+        <div className={styles.logo}>
+          <img src={logo} alt="Kollektiva's logo" />
+        </div>
         <ul className={styles.ul}>
           <li className={styles.list}>
             <img src={myPage} alt="icon of a person" />

@@ -6,7 +6,7 @@ const RadioButton = ({ value, name, id }) => {
   return (
     <div className={styles.inputBox}>
       <input className={styles.input} type="radio" id={id} name={name}></input>
-      <label for={id}>{value}</label>
+      <label htmlFor={id}>{value}</label>
     </div>
   );
 };
