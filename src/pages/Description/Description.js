@@ -20,18 +20,26 @@ const DescriptionPage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 13 av 14</p>
+        <p className={styles.steps}>Steg 14 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
-          <h1 className={styles.title}>Ge en beskrivning</h1>
+          <h1 className={styles.title}>Titel och beskrivning</h1>
           <p className={styles.text}>
-            Ge en generell beskrivning av bostaden och dess område.
+            Skriv en förklarande text om bostaden och området.
           </p>
+
+          <p className={styles.textareaInfo}>Titel på annons</p>
           <form>
             <textarea />
+          </form>
+
+          <p className={styles.textareaInfo}>Beskrivning av bostaden</p>
+          <form>
+            <p className={styles.textSigns}>0/250 tecken</p>
+            <textarea className={styles.biggerTextarea} />
           </form>
 
           <InfoBox

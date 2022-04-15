@@ -21,7 +21,7 @@ const NoticePeriodPage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
         <p className={styles.steps}>Steg 7 av 15</p>

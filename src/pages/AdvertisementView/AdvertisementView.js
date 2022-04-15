@@ -22,37 +22,73 @@ const AdvertisementViewPage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 14 av 14</p>
+        <p className={styles.steps}>Steg 15 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
-          <h1 className={styles.title}>Såhär kommer din annons se ut</h1>
-          <h3 className={styles.subTitle}>Adress 123 Göteborg</h3>
-          {/* <img src={image} alt="houseview" /> */}
-          <h3 className={styles.subTitle}>Villa 240 kvm</h3>
+          <h1 className={styles.title}>Kontrollera din annons</h1>
           <p className={styles.text}>
-            Duis orci semper cursus nulla enim. Nisi morbi odio enim morbi
-            porta. Adipiscing iaculis tellus arcu proin. Eu dignissim elit massa
-            pellentesque a ornare luctus quam at.
+            Titta över din annons och se till att alla uppgifter stämmer innan
+            du publicerar den.
           </p>
-          {/* </div> */}
-          {/* <div className={styles.wrapper}> */}
-          <h3 className={styles.subTitle}>Bekvämligheter</h3>
-          <p className={styles.smallText}>Hursdjur tillåtet</p>
-          <p className={styles.smallText}>Parkering</p>
-          <h3 className={styles.subTitle}>Badrum</h3>
-          <p className={styles.smallText}>Toalettarmstöd</p>
-          <p className={styles.smallText}>Duschbänk</p>
-          <p className={styles.smallText}>Tvättmaskin</p>
-          <h3 className={styles.subTitle}>Kök</h3>
-          <p className={styles.smallText}>Diskmaskin</p>
-          <p className={styles.smallText}>Microvågsugn</p>
-          <p className={styles.smallText}>Kaffebryggare</p>
-          <h3 className={styles.subTitle}>Utomhus</h3>
-          <p className={styles.smallText}>Diskmaskin</p>
-          <p className={styles.smallText}>Microvågsugn</p>
+          <p className={styles.publishDate}>Publicerad 7 april</p>
+          <h2 className={styles.subTitle}>Ljust rum i fin stuga vid skogen</h2>
+          <img />
+          <h3 className={styles.addressText}>Hövägen</h3>
+          <p className={styles.addressSmallText}>Älvängen</p>
+          <p className={styles.smallText}>Om boendet</p>
+          <p className={styles.smallerText}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum.
+          </p>
+          <p className={styles.smallerTextPartTwo}>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos, ac not aliquet odio mattis.
+          </p>
+          <div className={styles.facilitiesWrapper}>
+            <p className={styles.subTitle}>Tidsperiod</p>
+            <p className={styles.smallText}>6 månader</p>
+            <p className={styles.smallText}>18-05-2022 - 18-11-2022</p>
+            <p className={styles.subTitle}>Rum</p>
+            <p className={styles.smallText}>1</p>
+            <p className={styles.subTitle}>Hyresgäst antal</p>
+            <p className={styles.smallText}>1</p>
+            <p className={styles.subTitle}>Hyra</p>
+            <p className={styles.smallText}>4 540 kr/månaden</p>
+            <p className={styles.subTitle}>Egen yta (rum)</p>
+            <p className={styles.smallText}>16 m&sup2;</p>
+            <p className={styles.subTitle}>Bostadstyp</p>
+            <p className={styles.smallText}>Hus</p>
+            <p className={styles.subTitle}>Boendeform</p>
+            <p className={styles.smallText}>Villa eller äganderätt</p>
+            <p className={styles.subTitle}>Fakta och facilitet</p>
+            <p className={styles.smallText}>Tillgängligt Wifi</p>
+            <p className={styles.smallText}>Rullstolsanpassad</p>
+            <p className={styles.smallText}>Husdjur tillåtet</p>
+            <p className={styles.smallText}>Garage</p>
+            <p className={styles.subTitle}>Tillgängligt i badrum</p>
+            <p className={styles.smallText}>Dusch</p>
+            <p className={styles.smallText}>Torktumlare</p>
+            <p className={styles.smallText}>Tvättmaskin</p>
+            <p className={styles.smallText}>Toalett</p>
+            <p className={styles.subTitle}>Tillgängligt i kök</p>
+            <p className={styles.smallText}>Mikrovågsugn</p>
+            <p className={styles.smallText}>Vattenkokare</p>
+            <p className={styles.smallText}>Frys</p>
+            <p className={styles.smallText}>Ugn och spis</p>
+            <p className={styles.smallText}>Kyl</p>
+            <p className={styles.smallText}>Kaffebryggare</p>
+            <p className={styles.subTitle}>Tillgängligt utomhus</p>
+            <p className={styles.smallText}>Balkong</p>
+          </div>
+          <p className={styles.finishingText}>
+            Ta det första steget till att göra det här stället till ditt
+            temporära hem.
+          </p>
+          {/* <button></button> */}
+
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
             <h3>Är du redo att publicera din annons?</h3>
             <p>Det går att uppdatera din annons senare via mina sidor.</p>

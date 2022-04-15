@@ -20,15 +20,15 @@ const RentalSizePage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 2 av 14</p>
+        <p className={styles.steps}>Steg 4 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
-          <h1 className={styles.title}>Hur stor yta hyr du ut?</h1>
+          <h1 className={styles.title}>Yta som hyrs ut</h1>
           <p className={styles.text}>
-            Fyll i storleken på den boarea du vill hyra ut.
+            Ange antal rum och kvadratmeter som ska hyras ut.
           </p>
           <p className={styles.text}>Antal rum</p>
           <form className={styles.form}>

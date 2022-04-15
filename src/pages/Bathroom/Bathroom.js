@@ -21,13 +21,14 @@ const BathroomPage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 10 av 14</p>
+        <p className={styles.steps}>Steg 11 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
-          <h1 className={styles.title}>Badrum</h1>
+          <h1 className={styles.title}>Vad finns i badrummet?</h1>
+          <p className={styles.text}>Välj vad som stämmer in på rummet.</p>
           <form>
             <RadioButton id="bathroom" value="Toalett"></RadioButton>
             <RadioButton id="bathroom" value="Badkar"></RadioButton>

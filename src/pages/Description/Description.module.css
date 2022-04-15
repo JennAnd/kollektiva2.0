@@ -25,13 +25,22 @@
   width: 396px;
   margin-bottom: 32px;
 }
+
 textarea {
   border-radius: 8px;
   border: 2px solid black;
   resize: none;
   width: 396px;
-  height: 167px;
+  height: 50px;
 }
+.biggerTextarea {
+  border-radius: 8px;
+  border: 2px solid black;
+  resize: none;
+  width: 396px;
+  height: 80px;
+}
+
 .pageNavigation {
   width: 408px;
   display: flex;

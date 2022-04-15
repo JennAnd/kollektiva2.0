@@ -18,13 +18,10 @@ const AdvertisementPublishPage = (props) => {
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Din annons har publicerats</h1>
-          <h3 className={styles.subTitle}>
-            Din annons är nu sökbar för andra personer
-          </h3>
+          <h3 className={styles.subTitle}>Glöm inte att ...</h3>
           <p className={styles.smallText}>
-            Ha koll på din annons och se vilka som är intresserade i din bostad
-            på
-            <a href="#"> mina sidor.</a>
+            Hålla koll på din annons och se vilka som är intresserade av din
+            bostad via mina sidor.
           </p>
           <div className={styles.viewMyPages}>
             <Button
@@ -34,14 +31,6 @@ const AdvertisementPublishPage = (props) => {
               border="2px solid #000000"
             />
           </div>
-          <form>
-            <h3 className={styles.title}>Att tänka på</h3>
-            <ul>
-              Håll koll på om någon kontaktar dig, se dina{" "}
-              <a href="#"> meddelanden</a>
-            </ul>
-            <textarea cols="50" rows="8" />
-          </form>
         </div>
       </div>
       <MenuButton onClick={() => setButtonMenu(true)} />

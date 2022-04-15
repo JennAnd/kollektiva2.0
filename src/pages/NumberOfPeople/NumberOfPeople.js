@@ -21,16 +21,14 @@ const NumberOfPeoplePage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 5 av 14</p>
+        <p className={styles.steps}>Steg 5 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
-          <h1 className={styles.title}>Hur många hyr du ut till?</h1>
-          <p className={styles.text}>
-            Välj hur många som du vill hyra ut till.
-          </p>
+          <h1 className={styles.title}>Antal hyresgäster</h1>
+          <p className={styles.text}>Välj hur många du vill hyra ut till.</p>
           <div className={styles.container}>
             <button className={styles.boxStart}>1</button>
             <button className={styles.box}>2</button>

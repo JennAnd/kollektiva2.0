@@ -21,13 +21,14 @@ const OutsidePage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 12 av 14</p>
+        <p className={styles.steps}>Steg 13 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
-          <h1 className={styles.title}>Utomhus</h1>
+          <h1 className={styles.title}>Vad finns utomhus?</h1>
+          <p className={styles.text}>Välj vad som stämmer in på bostaden.</p>
           <form>
             <RadioButton id="outside" value="Balkong"></RadioButton>
             <RadioButton id="outside" value="Trädgård"></RadioButton>

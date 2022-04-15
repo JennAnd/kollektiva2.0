@@ -21,15 +21,15 @@ const FactsAndFacilitiesPage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 9 av 14</p>
+        <p className={styles.steps}>Steg 10 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Fakta och faciliteter</h1>
           <p className={styles.text}>Välj vad som stämmer in på bostaden.</p>
-          <h2 className={styles.subTitle}>Bekvämligheter</h2>
+
           <form>
             <RadioButton
               id="factsAndFacilities"

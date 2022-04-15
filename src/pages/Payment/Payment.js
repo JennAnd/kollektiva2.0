@@ -20,15 +20,15 @@ const PaymentPage = (props) => {
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
           <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt</p>
+          <p className={styles.continue}>Fortsätt senare</p>
           <SupportButton></SupportButton>
         </div>
-        <p className={styles.steps}>Steg 7 av 14</p>
+        <p className={styles.steps}>Steg 8 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Hyra</h1>
           <p className={styles.text}>
-            Ange hur mycket hyran för hyresgästen är.
+            Välj hur mycket det kommer kosta för hyresgästen att bo hos dig.
           </p>
           <form className={styles.form}>
             <label htmlFor="payment"></label>
