@@ -20,10 +20,15 @@ const OutsidePage = (props) => {
       <MenuDesktop />
       <div className={styles.marginWrapper}>
         <div className={styles.topBar}>
-          <img src={ContinueClose} alt="cross for closing"></img>
-          <p className={styles.continue}>Fortsätt senare</p>
-          <SupportButton></SupportButton>
+          <div className={styles.leftContainer}>
+            <img src={ContinueClose} alt="cross for closing"></img>
+            <p className={styles.continue}>Fortsätt senare</p>
+          </div>
+          <div className={styles.rightContainer}>
+            <SupportButton />
+          </div>
         </div>
+
         <p className={styles.steps}>Steg 13 av 15</p>
         <div className={styles.blueLine}></div>
         <div className={styles.section}>
