@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { navigate } from "@reach/router";
 import styles from "./Home.module.css";
 /* import Button from "../../components/Button"; */
 import Card from "../../components/Card/Card";
@@ -31,6 +32,7 @@ const HomePage = (props) => {
           title="Hyr ut din bostad"
           text="Utöka ditt sociala liv och dra nytta av din bostad genom att hyra ut en del av den"
           buttonText="Läs mer om att hyra ut din bostad"
+          onClick={() => navigate("/find-friends")}
         ></Card>
         <Card
           title="Hyr en bostad"
