@@ -1,3 +1,9 @@
+.choice {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito Sans";
+}
+
 .section {
   display: flex;
   flex-direction: column;

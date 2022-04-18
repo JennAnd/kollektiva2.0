@@ -1,16 +1,20 @@
 .choice {
   display: flex;
   flex-direction: column;
+  font-family: "Nunito Sans";
 }
+
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .marginWrapper {
   margin: 16px;
 }
+
 .leftContainer {
   display: flex;
   flex-direction: row;

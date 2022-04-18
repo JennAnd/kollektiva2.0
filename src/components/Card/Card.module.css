@@ -51,10 +51,11 @@
   font-size: 40px;
   font-weight: 600;
   margin-left: 10px;
+  font-family: "Nunito Sans";
 }
 
 .cardContent .text {
   font-size: 18px;
-
+  font-family: "Nunito Sans";
   margin-bottom: 40px;
 }

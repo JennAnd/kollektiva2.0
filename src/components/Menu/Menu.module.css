@@ -11,6 +11,7 @@
   bottom: 0;
   width: 100%;
   background-color: #ffffff;
+  font-family: "Nunito Sans";
 }
 .list {
   display: flex;
