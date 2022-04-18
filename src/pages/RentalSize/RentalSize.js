@@ -36,30 +36,38 @@ const RentalSizePage = (props) => {
           </p>
           {/* <p className={styles.text}>Antal rum</p> */}
           <form className={styles.form}>
-            <label htmlFor="size"></label>
-            <select className={styles.select}>
-              <option value="size">1</option>
-              <option value="size">2</option>
-              <option value="size">3</option>
-              <option value="size">4</option>
-              <option value="size">5</option>
-            </select>
-            <div className={styles.size}>
-              <p className={styles.textSize}>rum</p>
+            <label className={styles.label} htmlFor="size">
+              Antal rum
+            </label>
+            <div className={styles.selectForm}>
+              <select className={styles.select}>
+                <option value="size">1</option>
+                <option value="size">2</option>
+                <option value="size">3</option>
+                <option value="size">4</option>
+                <option value="size">5</option>
+              </select>
+              <div className={styles.size}>
+                <p className={styles.textSize}>rum</p>
+              </div>
             </div>
           </form>
           {/* <p className={styles.text}>Storlek</p> */}
           <form className={styles.form}>
-            <label htmlFor="size"></label>
-            <select className={styles.select}>
-              <option value="size">22</option>
-              <option value="size">23</option>
-              <option value="size">24</option>
-              <option value="size">25</option>
-              <option value="size">26</option>
-            </select>
-            <div className={styles.size}>
-              <p className={styles.textSize}>m&sup2;</p>
+            <label className={styles.label} htmlFor="size">
+              Storlek
+            </label>
+            <div className={styles.selectForm}>
+              <select className={styles.select}>
+                <option value="size">22</option>
+                <option value="size">23</option>
+                <option value="size">24</option>
+                <option value="size">25</option>
+                <option value="size">26</option>
+              </select>
+              <div className={styles.size}>
+                <p className={styles.textSize}>m&sup2;</p>
+              </div>
             </div>
           </form>
           <div className={styles.infoBox}>

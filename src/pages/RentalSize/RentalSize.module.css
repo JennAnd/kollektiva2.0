@@ -64,6 +64,13 @@
   margin: 0px 16px 20px 0px;
 }
 
+.label {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  margin: 12px 0px 0px 0px;
+}
+
 .textSize {
   font-size: 18px;
   line-height: 21px;
@@ -82,7 +89,7 @@
 
 .form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .select {
@@ -102,6 +109,11 @@
   margin-bottom: 190px;
   margin-top: 10px;
 } */
+
+.selectForm {
+  display: flex;
+  flex-direction: row;
+}
 
 .pageNavigation {
   width: 460px;
