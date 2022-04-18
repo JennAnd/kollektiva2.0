@@ -103,6 +103,7 @@
   height: 56px;
   width: 364px;
   padding: 0px 16px 0px 16px;
+  cursor: pointer;
 }
 
 .pageNavigation {
