@@ -43,9 +43,9 @@ const RentalTypePage = (props) => {
             <RadioButton id="rentalType" value="Lägenheten"></RadioButton>
             <RadioButton id="rentalType" value="Loftgångshus"></RadioButton>
           </form>
-
-          <InfoBox text="Du kan endast välja en form av bostad."></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox text="Du kan endast välja en form av bostad."></InfoBox>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/rental-address")}

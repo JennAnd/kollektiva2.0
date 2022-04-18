@@ -9,6 +9,7 @@
   flex-direction: row;
   align-items: center;
   gap: 4px;
+  margin-left: -6px;
 }
 
 .topBar {
@@ -30,12 +31,14 @@
   width: 96px;
   font-weight: 800;
   margin-bottom: 4px;
+  /* margin-top: 8px; */
 }
 
 .line {
   border-bottom: 3px solid #6b51ef;
   border-radius: 2px;
   width: 96px;
+  margin-bottom: 13px;
 }
 
 .section {
@@ -54,13 +57,13 @@
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
-  margin: 0px 0px 8px 0px;
+  margin: 0px 0px 8px -35px;
 }
 
 .text {
   font-size: 18px;
   line-height: 21px;
-  margin: 0px 0px 12px 0px;
+  margin: 0px 0px 12px -86px;
 }
 
 .form {
@@ -71,7 +74,7 @@
 .label {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 800;
   margin: 12px 0px 0px 0px;
 }
 
@@ -83,6 +86,10 @@
   border-radius: 8px;
   margin: 4px 0px 12px 0px;
   font-size: 18px;
+}
+
+.infoBox {
+  margin-bottom: 100px;
 }
 
 .pageNavigation {

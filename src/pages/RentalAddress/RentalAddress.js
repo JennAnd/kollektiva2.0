@@ -53,8 +53,9 @@ const RentalAddressPage = (props) => {
             <input className={styles.input} type="text" id="address" />
           </form>
 
-          <InfoBox text="Din fullständiga adress kommer ej synas i annonsen."></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox text="Din fullständiga adress kommer ej synas i annonsen."></InfoBox>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/")}

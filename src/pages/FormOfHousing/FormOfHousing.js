@@ -41,11 +41,12 @@ const FormOfHousingPage = (props) => {
               value="Villa eller äganderätt"
             ></RadioButton>
           </form>
-
-          <InfoBox
-            text="Tänk på att du i vissa fall måste ha ett godkännande av din hyresvärd för att ha en extra hyresgäst inneboende."
-            height="93px"
-          ></InfoBox>
+          <div className={styles.infoBox}>
+            <InfoBox
+              text="Tänk på att du i vissa fall måste ha ett godkännande av din hyresvärd för att ha en extra hyresgäst inneboende."
+              height="93px"
+            ></InfoBox>
+          </div>
 
           <div className={styles.pageNavigation}>
             <Button

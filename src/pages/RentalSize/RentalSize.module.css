@@ -19,6 +19,7 @@
   flex-direction: row;
   align-items: center;
   gap: 4px;
+  margin-left: -6px;
 }
 
 .topBar {
@@ -46,6 +47,7 @@
   border-bottom: 3px solid #6b51ef;
   border-radius: 2px;
   width: 96px;
+  margin-bottom: 13px;
 }
 
 .title {
@@ -53,13 +55,13 @@
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
-  margin: 0px 0px 8px 0px;
+  margin: 0px 0px 8px -34px;
 }
 
 .text {
   font-size: 18px;
   line-height: 21px;
-  margin: 0px 0px 12px 0px;
+  margin: 0px 16px 20px 0px;
 }
 
 .textSize {
@@ -90,6 +92,16 @@
   height: 58px;
   padding-left: 18px;
 }
+
+.infoBox {
+  margin-bottom: 190px;
+  margin-top: 10px;
+}
+
+/* .infoBox {
+  margin-bottom: 190px;
+  margin-top: 10px;
+} */
 
 .pageNavigation {
   width: 460px;

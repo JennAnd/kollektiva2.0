@@ -34,7 +34,7 @@ const RentalSizePage = (props) => {
           <p className={styles.text}>
             Ange antal rum och kvadratmeter som ska hyras ut.
           </p>
-          <p className={styles.text}>Antal rum</p>
+          {/* <p className={styles.text}>Antal rum</p> */}
           <form className={styles.form}>
             <label htmlFor="size"></label>
             <select className={styles.select}>
@@ -48,7 +48,7 @@ const RentalSizePage = (props) => {
               <p className={styles.textSize}>rum</p>
             </div>
           </form>
-          <p className={styles.text}>Storlek</p>
+          {/* <p className={styles.text}>Storlek</p> */}
           <form className={styles.form}>
             <label htmlFor="size"></label>
             <select className={styles.select}>
@@ -62,12 +62,12 @@ const RentalSizePage = (props) => {
               <p className={styles.textSize}>m&sup2;</p>
             </div>
           </form>
-
-          <InfoBox
-            text="Uppge ej kvadratmeterna för de gemensamma ytorna, så som kök och vardagsrum."
-            /* height="93px" */
-          ></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox
+              text="Uppge ej kvadratmeterna för de gemensamma ytorna, så som kök och vardagsrum."
+              /* height="93px" */
+            ></InfoBox>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/form-of-housing")}
@@ -86,9 +86,10 @@ const RentalSizePage = (props) => {
             ></Button>
           </div>
         </div>
-        <MenuButton onClick={() => setButtonMenu(true)} />
-        <Menu open={buttonMenu} setOpen={setButtonMenu} />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
+
       <Footer />
     </div>
   );

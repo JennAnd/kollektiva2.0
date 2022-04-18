@@ -20,6 +20,7 @@
   flex-direction: row;
   align-items: center;
   gap: 4px;
+  margin-left: -6px;
 }
 
 .topBar {
@@ -41,27 +42,30 @@
   width: 96px;
   font-weight: 800;
   margin-bottom: 4px;
+  /* margin-top: 8px; */
 }
 
 .line {
   border-bottom: 3px solid #6b51ef;
   border-radius: 4px;
   width: 96px;
+  margin-bottom: 13px;
 }
 
 .title {
   font-size: 32px;
   font-weight: 800;
-  margin: 0px 182px 0px 0px;
+  margin: 2px 182px 0px 0px;
 }
 
 .text {
   font-size: 18px;
   width: 396px;
   margin-bottom: 32px;
+  margin-top: 4px;
 }
 
-.infoBox {
+/* .infoBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,16 +74,21 @@
   background-color: #ded1e9;
   border-radius: 8px;
   margin-top: 44px;
+} */
+
+.infoBox {
+  margin-bottom: 20px;
 }
 
 .lightSymbol {
   padding-left: 4%;
 }
-.infoText {
+
+/* .infoText {
   font-size: 16px;
   padding-left: 4%;
   padding-right: 4%;
-}
+} */
 
 .pageNavigation {
   width: 408px;

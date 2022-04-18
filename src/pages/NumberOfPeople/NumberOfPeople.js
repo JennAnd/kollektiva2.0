@@ -43,11 +43,12 @@ const NumberOfPeoplePage = (props) => {
             <button className={styles.boxEnd}>+6</button>
           </div>
 
-          <InfoBox
-            text="Tänk på att det måste finnas sovplatser till varje hyresgäst. Vi rekommenderar minst 10 kvm per person."
-            /* height="93px" */
-          ></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox
+              text="Tänk på att det måste finnas sovplatser till varje hyresgäst. Vi rekommenderar minst 10 kvm per person."
+              /* height="93px" */
+            ></InfoBox>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/rental-size")}

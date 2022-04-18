@@ -18,6 +18,7 @@
   flex-direction: row;
   align-items: center;
   gap: 4px;
+  margin-left: -6px;
 }
 
 .topBar {
@@ -45,21 +46,28 @@
   border-bottom: 3px solid #6b51ef;
   border-radius: 2px;
   width: 96px;
+  margin-bottom: 13px;
 }
 
 .title {
   width: 361px;
   font-size: 32px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 800;
+  margin-left: -35px;
+  margin-top: 4px;
+  margin-bottom: -8px;
 }
 
 .text {
   font-size: 18px;
   width: 396px;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
+.infoBox {
+  margin-bottom: 150px;
+}
 .pageNavigation {
   width: 408px;
   display: flex;

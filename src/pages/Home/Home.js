@@ -29,17 +29,19 @@ const HomePage = (props) => {
             Kollektiva förmedlar på ett tryggt och effektivt sätt ut delade
             hyresbostäder.
           </p>
-          <Card
-            title="Hyr ut din bostad"
-            text="Utöka ditt sociala liv och dra nytta av din bostad genom att hyra ut en del av den"
-            buttonText="Läs mer om att hyra ut din bostad"
-            onClick={() => navigate("/find-friends")}
-          ></Card>
-          <Card
-            title="Hyr en bostad"
-            text="500 000+ användare har redan hittat bostadsvänner via Kollektiva"
-            buttonText="Läs mer om att hyra en bostad"
-          ></Card>
+          <div className={styles.card}>
+            <Card
+              title="Hyr ut din bostad"
+              text="Utöka ditt sociala liv och dra nytta av din bostad genom att hyra ut en del av den"
+              buttonText="Läs mer om att hyra ut din bostad"
+              onClick={() => navigate("/find-friends")}
+            ></Card>
+            <Card
+              title="Hyr en bostad"
+              text="500 000+ användare har redan hittat bostadsvänner via Kollektiva"
+              buttonText="Läs mer om att hyra en bostad"
+            ></Card>
+          </div>
         </div>
       </div>
       <MenuButton onClick={() => setButtonMenu(true)} />
