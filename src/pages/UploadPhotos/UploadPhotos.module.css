@@ -37,6 +37,18 @@
   margin: 0px;
 }
 
+.steps {
+  width: 96px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.line {
+  border-bottom: 3px solid #6b51ef;
+  border-radius: 2px;
+  width: 96px;
+}
+
 .title {
   width: 361px;
   font-size: 48px;

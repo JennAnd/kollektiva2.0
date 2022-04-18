@@ -30,7 +30,7 @@ const NumberOfPeoplePage = (props) => {
         </div>
 
         <p className={styles.steps}>Steg 5 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Antal hyresgäster</h1>
           <p className={styles.text}>Välj hur många du vill hyra ut till.</p>

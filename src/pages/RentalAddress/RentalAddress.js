@@ -29,7 +29,7 @@ const RentalAddressPage = (props) => {
           </div>
         </div>
         <p className={styles.steps}>Steg 1 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Adress</h1>
           <p className={styles.text}>Skriv in bostadens fullständiga adress.</p>

@@ -33,7 +33,7 @@ const RentalTimelinePage = () => {
           </div>
         </div>
         <p className={styles.steps}>Steg 6 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Tidsperiod</h1>
           <p className={styles.text}>

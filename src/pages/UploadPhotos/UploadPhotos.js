@@ -28,7 +28,7 @@ const UploadPhotosPage = (props) => {
           </div>
         </div>
         <p className={styles.steps}>Steg 9 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Ladda upp bilder</h1>
           <p className={styles.text}>

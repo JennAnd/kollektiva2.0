@@ -30,7 +30,7 @@ const AdvertisementViewPage = (props) => {
           </div>
         </div>
         <p className={styles.steps}>Steg 15 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Kontrollera din annons</h1>
           <p className={styles.text}>

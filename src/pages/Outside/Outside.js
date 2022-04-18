@@ -30,7 +30,7 @@ const OutsidePage = (props) => {
         </div>
 
         <p className={styles.steps}>Steg 13 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Vad finns utomhus?</h1>
           <p className={styles.text}>Välj vad som stämmer in på bostaden.</p>

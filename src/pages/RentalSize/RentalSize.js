@@ -28,7 +28,7 @@ const RentalSizePage = (props) => {
           </div>
         </div>
         <p className={styles.steps}>Steg 4 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Yta som hyrs ut</h1>
           <p className={styles.text}>

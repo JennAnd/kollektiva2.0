@@ -28,7 +28,7 @@ const DescriptionPage = (props) => {
           </div>
         </div>
         <p className={styles.steps}>Steg 14 av 15</p>
-        <div className={styles.blueLine}></div>
+        <div className={styles.line}></div>
         <div className={styles.section}>
           <h1 className={styles.title}>Titel och beskrivning</h1>
           <p className={styles.text}>
