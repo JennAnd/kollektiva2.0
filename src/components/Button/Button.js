@@ -11,6 +11,8 @@ const Button = ({
   altText,
   buttonText,
   flexDirection,
+  width,
+  jc
 }) => {
   return (
     <button
@@ -21,6 +23,8 @@ const Button = ({
         border: border,
         color: color,
         flexDirection: flexDirection,
+        width: width,
+        justifyContent:jc,
       }}
     >
       <img src={icon} alt={altText} />
@@ -35,6 +39,8 @@ Button.propTypes = {
   onClick: PropTypes.func,
   border: PropTypes.string,
   color: PropTypes.string,
+  width: PropTypes.string,
+  jc:PropTypes.string,
   icon: PropTypes.string,
 };
 
