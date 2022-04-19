@@ -15,6 +15,8 @@ const Button = ({
   padding,
   height,
   width,
+  width,
+  jc,
 }) => {
   return (
     <button
@@ -29,6 +31,8 @@ const Button = ({
         padding: padding,
         height,
         width,
+        width: width,
+        justifyContent: jc,
       }}
     >
       <img src={icon} alt={altText} />
@@ -43,6 +47,8 @@ Button.propTypes = {
   onClick: PropTypes.func,
   border: PropTypes.string,
   color: PropTypes.string,
+  width: PropTypes.string,
+  jc: PropTypes.string,
   icon: PropTypes.string,
   fontSize: PropTypes.string,
   padding: PropTypes.string,
