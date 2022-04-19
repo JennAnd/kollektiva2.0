@@ -215,9 +215,9 @@ const AdvertisementViewPage = (props) => {
          </Button>
           </div>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-            <h3>Är du redo att publicera din annons?</h3>
-            <p>Det går att uppdatera din annons senare via mina sidor.</p>
-            <p>
+            <h3 className={styles.titlePopup}>Är du redo att publicera din annons?</h3>
+            <p className={styles.textPopup}>Det går att uppdatera din annons senare via mina sidor.</p>
+            <p className={styles.textPopup}>
               Tveka inte att kontakta oss om du behöver hjälp med din annons.
             </p>
             <div className={styles.containerBtn}>
