@@ -54,7 +54,8 @@ const FactsAndFacilitiesPage = (props) => {
 
           <InfoBox
             text="Du kan kryssa i flera alternativ här."
-            /* height="93px" */
+            height="56px"
+            paddingRight="88px"
           ></InfoBox>
 
           <div className={styles.pageNavigation}>

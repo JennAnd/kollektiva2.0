@@ -46,7 +46,9 @@ const NumberOfPeoplePage = (props) => {
           <div className={styles.infoBox}>
             <InfoBox
               text="Tänk på att det måste finnas sovplatser till varje hyresgäst. Vi rekommenderar minst 10 kvm per person."
-              /* height="93px" */
+              height="84px"
+              gap="16px"
+              paddingRight="20px"
             ></InfoBox>
           </div>
           <div className={styles.pageNavigation}>

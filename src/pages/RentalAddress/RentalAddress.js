@@ -54,7 +54,11 @@ const RentalAddressPage = (props) => {
           </form>
 
           <div className={styles.infoBox}>
-            <InfoBox text="Din fullständiga adress kommer ej synas i annonsen."></InfoBox>
+            <InfoBox
+              text="Din fullständiga adress kommer ej synas i annonsen."
+              height="64px"
+              gap="16px"
+            ></InfoBox>
           </div>
           <div className={styles.pageNavigation}>
             <Button

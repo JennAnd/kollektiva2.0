@@ -11,6 +11,10 @@ const Button = ({
   altText,
   buttonText,
   flexDirection,
+  fontSize,
+  padding,
+  height,
+  width,
 }) => {
   return (
     <button
@@ -21,6 +25,10 @@ const Button = ({
         border: border,
         color: color,
         flexDirection: flexDirection,
+        fontSize: fontSize,
+        padding: padding,
+        height,
+        width,
       }}
     >
       <img src={icon} alt={altText} />
@@ -36,6 +44,10 @@ Button.propTypes = {
   border: PropTypes.string,
   color: PropTypes.string,
   icon: PropTypes.string,
+  fontSize: PropTypes.string,
+  padding: PropTypes.string,
+  height: PropTypes.string,
+  width: PropTypes.string,
 };
 
 export default Button;

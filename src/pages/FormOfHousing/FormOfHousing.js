@@ -44,7 +44,9 @@ const FormOfHousingPage = (props) => {
           <div className={styles.infoBox}>
             <InfoBox
               text="Tänk på att du i vissa fall måste ha ett godkännande av din hyresvärd för att ha en extra hyresgäst inneboende."
-              height="93px"
+              height="84px"
+              gap="16px"
+              paddingRight="40px"
             ></InfoBox>
           </div>
 

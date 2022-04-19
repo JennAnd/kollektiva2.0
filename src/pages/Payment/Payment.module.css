@@ -74,6 +74,7 @@
   text-align: center;
   font-weight: 800;
 }
+
 .price {
   border-radius: 0px 8px 8px 0px;
   border: 2px solid black;
@@ -82,6 +83,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.infoBox {
+  display: flex;
+  position: relative;
+}
+
+.flexButton {
+  display: flex;
+  position: absolute;
+  margin-top: 206px;
+  margin-left: 184px;
+}
+
 .pageNavigation {
   width: 408px;
   display: flex;

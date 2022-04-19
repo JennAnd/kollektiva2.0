@@ -5,6 +5,7 @@ import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import SupportButton from "../../components/SupportButton/SupportButton";
 import InfoBox from "../../components/InfoBox/InfoBox";
+import ArrowRightDark from "../../assets/images/arrow-right-dark.svg";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Footer from "../../components/Footer/Footer";
@@ -41,12 +42,26 @@ const PaymentPage = (props) => {
               <p className={styles.textPrice}>Kr</p>
             </div>
           </form>
-
-          <InfoBox
-            text="Räkna ut vilket pris du bör sätta i hyra genom att ta hjälp av Kollektivas bostadskalkyl."
-            /* height="120px" */
-          ></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox
+              text="Räkna ut vilket pris du bör sätta i hyra genom att ta hjälp av Kollektivas bostadskalkyl."
+              height="148px"
+              gap="16px"
+            ></InfoBox>
+          </div>
+          <div className={styles.flexButton}>
+            <Button
+              buttonText="Ta mig till kalkylatorn"
+              bg="white"
+              border="2px solid #3A0067"
+              color="#3A0067"
+              fontSize="14px"
+              icon={ArrowRightDark}
+              flexDirection="row-reverse"
+              padding="11px"
+              height="47px"
+            ></Button>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/notice-period")}

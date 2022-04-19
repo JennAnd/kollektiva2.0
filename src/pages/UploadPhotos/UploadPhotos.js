@@ -34,11 +34,13 @@ const UploadPhotosPage = (props) => {
           <p className={styles.text}>
             Ta eller ladda upp bilder som visar hur bostaden ser ut.
           </p>
-
-          <InfoBox
-            text="Ladda upp högupplösta bilder. Tänk på ljussättningen och ta bilder i olika vinklar."
-            /* height="120px" */
-          ></InfoBox>
+          <div className={styles.firstInfoBox}>
+            <InfoBox
+              text="Ladda upp högupplösta bilder. Tänk på ljussättningen och ta bilder i olika vinklar."
+              height="76px"
+              gap="16px"
+            ></InfoBox>
+          </div>
 
           <div className={styles.uploadPhotos}>
             <Button
@@ -58,11 +60,13 @@ const UploadPhotosPage = (props) => {
             <img />
             <img />
           </div>
-
-          <InfoBox
-            text="Glöm inte att markera annonsens omslagsbild genom att trycka på stjärnan."
-            /* height="120px" */
-          ></InfoBox>
+          <div className={styles.secondInfoBox}>
+            <InfoBox
+              text="Glöm inte att markera annonsens omslagsbild genom att trycka på stjärnan."
+              height="76px"
+              gap="16px"
+            ></InfoBox>
+          </div>
 
           <div className={styles.pageNavigation}>
             <Button

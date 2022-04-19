@@ -69,7 +69,9 @@ const RentalTimelinePage = () => {
           <div className={styles.infoBox}>
             <InfoBox
               text="Vi rekommenderar att du hyr ut bostaden från första dagen i varje månad för att du ska kunna ta betalt månadsvis. Dina chanser för uthyrning ökar om du hyr ut din bostad minst 3 månader."
-              /* height="120px" */
+              height="124px"
+              gap="16px"
+              paddingRight="30px"
             ></InfoBox>
           </div>
           <div className={styles.pageNavigation}>

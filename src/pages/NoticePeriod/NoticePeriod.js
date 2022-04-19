@@ -44,7 +44,9 @@ const NoticePeriodPage = (props) => {
 
           <InfoBox
             text="För längre uthyrning rekommenderar vi 3 månaders uppsägningstid."
-            /* height="93px" */
+            height="64px"
+            gap="16px"
+            paddingRight="44px"
           ></InfoBox>
 
           <div className={styles.pageNavigation}>

@@ -73,7 +73,9 @@ const RentalSizePage = (props) => {
           <div className={styles.infoBox}>
             <InfoBox
               text="Uppge ej kvadratmeterna för de gemensamma ytorna, så som kök och vardagsrum."
-              /* height="93px" */
+              height="84px"
+              gap="16px"
+              paddingRight="30px"
             ></InfoBox>
           </div>
           <div className={styles.pageNavigation}>

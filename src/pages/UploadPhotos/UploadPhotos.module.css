@@ -68,6 +68,10 @@
   margin-bottom: 32px;
 }
 
+.firstInfoBox {
+  margin-bottom: 36px;
+}
+
 .pageNavigation {
   width: 408px;
   display: flex;

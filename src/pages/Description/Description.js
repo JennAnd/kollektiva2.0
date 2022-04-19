@@ -42,13 +42,15 @@ const DescriptionPage = (props) => {
 
           <p className={styles.textareaInfo}>Beskrivning av bostaden</p>
           <form>
-            <p className={styles.textSigns}>0/250 tecken</p>
+            {/* <p className={styles.textSigns}>0/250 tecken</p> */}
             <textarea className={styles.biggerTextarea} />
           </form>
 
           <InfoBox
             text="Berätta gärna lite om dig som hyresvärd och vad du söker i en hyresgäst."
-            /* height="93px" */
+            height="64px"
+            gap="16px"
+            paddingRight="20px"
           ></InfoBox>
 
           <div className={styles.pageNavigation}>

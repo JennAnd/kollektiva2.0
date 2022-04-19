@@ -44,7 +44,11 @@ const RentalTypePage = (props) => {
             <RadioButton id="rentalType" value="Loftgångshus"></RadioButton>
           </form>
           <div className={styles.infoBox}>
-            <InfoBox text="Du kan endast välja en form av bostad."></InfoBox>
+            <InfoBox
+              text="Du kan endast välja en form av bostad."
+              height="56px"
+              paddingRight="58px"
+            ></InfoBox>
           </div>
           <div className={styles.pageNavigation}>
             <Button
