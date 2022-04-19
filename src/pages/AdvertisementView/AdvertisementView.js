@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./AdvertisementView.module.css";
 import Button from "../../components/Button/Button";
-/* import houseView from "./../../assets/images/houseView.png"; */
 import ContinueClose from "../../assets/images/continue-closed.svg";
+import Bedroom from "../../assets/images/bedroom.svg";
 import SupportButton from "../../components/SupportButton/SupportButton";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
@@ -39,9 +39,13 @@ const AdvertisementViewPage = (props) => {
           </p>
           <p className={styles.publishDate}>Publicerad 7 april</p>
           <h2 className={styles.subTitle}>Ljust rum i fin stuga vid skogen</h2>
-          <img />
+          <img src={Bedroom} alt="bedroom" />
+          <div className={styles.addressWrapper}>
           <h3 className={styles.addressText}>Hövägen</h3>
           <p className={styles.addressSmallText}>Älvängen</p>
+          </div>
+          <div className={styles.customer}>
+            </div>
           <p className={styles.smallText}>Om boendet</p>
           <p className={styles.smallerText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

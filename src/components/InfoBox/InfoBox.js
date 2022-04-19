@@ -5,7 +5,9 @@ import LightSymbol from "../../assets/images/light-symbol.svg";
 
 const InfoBox = ({ height, text, bg }) => {
   return (
-    <div className={styles.infoBox} height={height}>
+    <div className={styles.infoBox} style={{
+      height:height,
+    }}>
       <img
         className={styles.lightSymbol}
         src={LightSymbol}
