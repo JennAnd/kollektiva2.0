@@ -15,7 +15,6 @@ const Button = ({
   padding,
   height,
   width,
-  width,
   jc,
 }) => {
   return (
@@ -29,8 +28,7 @@ const Button = ({
         flexDirection: flexDirection,
         fontSize: fontSize,
         padding: padding,
-        height,
-        width,
+        height: height,
         width: width,
         justifyContent: jc,
       }}
@@ -53,7 +51,6 @@ Button.propTypes = {
   fontSize: PropTypes.string,
   padding: PropTypes.string,
   height: PropTypes.string,
-  width: PropTypes.string,
 };
 
 export default Button;
