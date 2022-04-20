@@ -45,7 +45,7 @@ const PaymentPage = (props) => {
           <div className={styles.infoBox}>
             <InfoBox
               text="Räkna ut vilket pris du bör sätta i hyra genom att ta hjälp av Kollektivas bostadskalkyl."
-              height="148px"
+              height="169px"
               gap="16px"
             ></InfoBox>
           </div>
@@ -80,9 +80,9 @@ const PaymentPage = (props) => {
             ></Button>
           </div>
         </div>
-        <MenuButton onClick={() => setButtonMenu(true)} />
-        <Menu open={buttonMenu} setOpen={setButtonMenu} />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

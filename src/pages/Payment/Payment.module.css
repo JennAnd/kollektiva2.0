@@ -50,17 +50,19 @@
 }
 
 .title {
-  width: 361px;
+  width: 396px;
   font-size: 32px;
-  line-height: 1;
+  line-height: 38px;
   font-weight: 700;
+  margin: 14px 0px 8px 0px;
 }
 
-/* p {
+.text {
   font-size: 18px;
+  line-height: 23px;
   width: 396px;
-  margin-bottom: 32px;
-} */
+  margin: 0px 0px 20px 0px;
+}
 
 .form {
   display: flex;
@@ -78,7 +80,7 @@
 .price {
   border-radius: 0px 8px 8px 0px;
   border: 2px solid black;
-  width: 86px;
+  width: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +99,7 @@
 }
 
 .pageNavigation {
-  width: 408px;
+  width: 396px;
   display: flex;
   justify-content: space-between;
   margin-top: 65px;

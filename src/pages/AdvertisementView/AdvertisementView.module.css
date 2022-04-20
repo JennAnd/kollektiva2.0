@@ -37,8 +37,8 @@
   margin: 0px;
 }
 
-.steps{
-  padding:0px 0px 0px 0px;
+.steps {
+  padding: 0px 0px 0px 0px;
   font-weight: 800;
   margin-bottom: 4px;
 }
@@ -48,20 +48,20 @@
   border-radius: 2px;
   width: 105px;
 }
-.publishDate{
-  width:387px;
+.publishDate {
+  width: 387px;
 }
 
-.addressText{
-  font-size:32px;
-  line-height:38px;
+.addressText {
+  font-size: 32px;
+  line-height: 38px;
   margin: 16px 0px 2px 8px;
 }
 
-.addressSmallText{
-  font-size:20px;
-  line-height:26px;
-  font-weight:500px;
+.addressSmallText {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500px;
   margin: 2px 0px 10px 8px;
 }
 .title {
@@ -69,134 +69,133 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
-  margin:13px 0px 0px 0px;
-  width:396px;
+  margin: 13px 0px 0px 0px;
+  width: 396px;
 }
 
 .subTitle {
   width: 281px;
   font-size: 40px;
   font-weight: 500;
-  line-height:47px;
-  width:366px;
+  line-height: 47px;
+  width: 366px;
   margin: 8px 24px 0px 0px;
 }
 
 .preamble {
   font-size: 16px;
   width: 389px;
-  border-bottom:1px solid #E9E9E9;
+  border-bottom: 1px solid #e9e9e9;
   padding: 0px 0px 28px 0px;
 }
 
 .boldText {
   font-size: 18px;
   font-weight: 700;
-  line-height:24px;
-  margin:0px;
-  padding:8px 0px 0px 8px;
+  line-height: 24px;
+  margin: 0px;
+  padding: 8px 0px 0px 8px;
 }
 
-.summaryText{
-  font-size:16px;
-  line-height:20px;
-  margin:0px;
-  padding:8px;
+.summaryText {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0px;
+  padding: 8px;
 }
-.addressWrapper{
-  background-color:white;
-  width:394px;
-  border-radius:0px 0px 8px 8px;
-  border: 1px solid #E9E9E9;
+.addressWrapper {
+  background-color: white;
+  width: 394px;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid #e9e9e9;
 }
 .containerBtn {
   padding: 41px 0px 0px 16px;
 }
-.customerWrapper{
-  display:flex;
-  flex-direction:row;
+.customerWrapper {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width:396px;
+  width: 396px;
   margin: 20px 0px 16px 0px;
 }
-.customer{
-  display:flex;
-  flex-direction:column;
+.customer {
+  display: flex;
+  flex-direction: column;
 }
-.customerText{
-font-size:18px;
-line-height:23px;
-font-weight:400;
-margin: 0px 0px 0px 0px
-
+.customerText {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
 }
-.text{
-font-size:18px;
-line-height:23px;
-font-weight:400;
-margin: 0px;
-padding:0px 0px 0px 8px;
-}
-
-.textDate{
-font-size:18px;
-line-height:23px;
-font-weight:400;
-margin: 0px;
-padding:8px 8px 0px 8px;
+.text {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px 0px 0px 8px;
 }
 
-.rentalInfo{
-  width:188px;
-  height:64px;
-  border-radius:8px;
-  background-color:white;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  border: 1px solid #E9E9E9;
-}
-.customerName{
-font-size:20px;
-line-height:27px;
-font-weight:800;
-margin: 0px 0px 0px 0px
+.textDate {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 8px 8px 0px 8px;
 }
 
-.summary{
-  width:396px;
-  height:201px;
-  background-color:white;
-  border-radius:8px;
-  border:1px solid #E9E9E9;
+.rentalInfo {
+  width: 188px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #e9e9e9;
+}
+.customerName {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 800;
+  margin: 0px 0px 0px 0px;
 }
 
-.time{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background-color:white;
-  border-radius:8px;
-  border: 1px solid #E9E9E9;
-  width:396px;
-  height:40px;
-  margin:32px 0px 0px 0px;
+.summary {
+  width: 396px;
+  height: 201px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e9e9e9;
 }
 
-.lastPart{
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e9e9e9;
+  width: 396px;
+  height: 40px;
+  margin: 32px 0px 0px 0px;
+}
+
+.lastPart {
   text-align: center;
-  width:396px;
-  border-bottom: 1px solid #E9E9E9;
+  width: 396px;
+  border-bottom: 1px solid #e9e9e9;
   padding-bottom: 40px;
 }
 
-.lastPartText{
-  font-size:20px;
-  line-height:27px;
-  font-weight:800;
-  margin: 40px 0px 18px 0px
-  }
+.lastPartText {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 800;
+  margin: 40px 0px 18px 0px;
+}
 
 .btn {
   font-size: 16px;
@@ -212,65 +211,64 @@ margin: 0px 0px 0px 0px
 }
 
 .pageNavigation {
-  width: 408px;
+  width: 396px;
   display: flex;
   justify-content: space-between;
   margin-top: 65px;
 }
 
-.rentalInfoWrapper{
-  display:flex;
-  justify-content:space-between;
-  width:396px;
+.rentalInfoWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 396px;
   margin: 32px 0px 0px 0px;
 }
 
-.rentalWrapper{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
+.rentalWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.Info{
-  background-color:white;
-  width:394px;
-  border-bottom: 1px solid #E9E9E9;
-  margin:16px 0px 0px 0px;
+.Info {
+  background-color: white;
+  width: 394px;
+  border-bottom: 1px solid #e9e9e9;
+  margin: 16px 0px 0px 0px;
 }
 
-.infoWrapper{
-  display:flex;
-  justify-content:space-between
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.imgText{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  margin:8px 8px 8px 8px;
+.imgText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 8px 8px 8px 8px;
 }
 
-.leftImgText{
-  display:flex;
-  flex-direction:column;
+.leftImgText {
+  display: flex;
+  flex-direction: column;
 }
 
-.rightImgText{
-  display:flex;
-  flex-direction:column;
+.rightImgText {
+  display: flex;
+  flex-direction: column;
 }
 
-.titlePopup{
+.titlePopup {
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
-  margin:80px 0px 0px 22px;
- 
+  margin: 80px 0px 0px 22px;
 }
 
-.textPopup{
+.textPopup {
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
-  margin:36px 8px 0px 22px;
+  margin: 36px 8px 0px 22px;
 }

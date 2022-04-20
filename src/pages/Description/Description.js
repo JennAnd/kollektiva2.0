@@ -35,15 +35,18 @@ const DescriptionPage = (props) => {
             Skriv en förklarande text om bostaden och området.
           </p>
 
-          <p className={styles.textareaInfo}>Titel på annons</p>
-          <form>
-            <textarea />
+          <form className={styles.form}>
+            <label className={styles.label} htmlFor="title">
+              Titel på annons
+            </label>
+            <textarea id="title" />
           </form>
 
-          <p className={styles.textareaInfo}>Beskrivning av bostaden</p>
-          <form>
-            {/* <p className={styles.textSigns}>0/250 tecken</p> */}
-            <textarea className={styles.biggerTextarea} />
+          <form className={styles.form}>
+            <label className={styles.label} htmlFor="description">
+              Beskrivning av bostaden
+            </label>
+            <textarea id="description" className={styles.biggerTextarea} />
           </form>
 
           <InfoBox
@@ -71,9 +74,9 @@ const DescriptionPage = (props) => {
             ></Button>
           </div>
         </div>
-        <MenuButton onClick={() => setButtonMenu(true)} />
-        <Menu open={buttonMenu} setOpen={setButtonMenu} />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );
