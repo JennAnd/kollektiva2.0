@@ -40,6 +40,7 @@ const AdvertisementPublishPage = (props) => {
               color="white"
               width="395px"
               height="60px"
+              jc="center"
             />
           </div>
         </div>

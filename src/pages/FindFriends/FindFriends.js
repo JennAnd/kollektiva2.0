@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./FindFriends.module.css";
+import MediumLogo from "./../../assets/images/medium-logo.svg";
+import Language from "./../../assets/images/language.svg";
 import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/house-roof.png";
-import Language from "./../../assets/images/language.svg";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
 import MenuButton from "../../components/MenuButton/MenuButton";
@@ -16,8 +17,13 @@ const FindFriendsPage = (props) => {
     <div className={styles.choice}>
       <MenuDesktop />
       <div className={styles.topBar}>
-        <p className={styles.chooseLanguage}>Välj språk</p>
-        <img src={Language} alt="round swedish flag"></img>
+        <div className={styles.leftContainer}>
+          <img src={MediumLogo} alt="logotype for Kollektiva"></img>
+        </div>
+        <div className={styles.rightContainer}>
+          <p className={styles.chooseLanguage}>Välj språk</p>
+          <img src={Language} alt="round swedish flag"></img>
+        </div>
       </div>
       <div className={styles.marginWrapper}>
         <div className={styles.section}>

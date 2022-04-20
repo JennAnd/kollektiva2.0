@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./Home.module.css";
+import MediumLogo from "./../../assets/images/medium-logo.svg";
 /* import Button from "../../components/Button"; */
 import Card from "../../components/Card/Card";
 import houseRoof from "./../../assets/images/house-roof.png";
@@ -18,10 +19,13 @@ const HomePage = (props) => {
       <div>
         <MenuDesktop />
         <div className={styles.topBar}>
-          <img src={Logotype} alt="logotype for Kollektiva"></img>
-          <p className={styles.logoName}>Kollektiva</p>
-          <p className={styles.chooseLanguage}>Välj språk</p>
-          <img src={Language} alt="round swedish flag"></img>
+          <div className={styles.leftContainer}>
+            <img src={MediumLogo} alt="logotype for Kollektiva"></img>
+          </div>
+          <div className={styles.rightContainer}>
+            <p className={styles.chooseLanguage}>Välj språk</p>
+            <img src={Language} alt="round swedish flag"></img>
+          </div>
         </div>
         <div className={styles.section}>
           <h1 className={styles.title}>Bo tillsammans med andra</h1>
