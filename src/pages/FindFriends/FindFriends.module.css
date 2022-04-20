@@ -48,11 +48,21 @@
   line-height: 1;
 }
 
-.subTitle {
+.image {
+  width: 428px;
+  margin-top: 36px;
+}
+
+.howTo {
+  background-color: #6b51ef;
+  width: 428px;
+  color: white;
+}
+/* .subTitle {
   width: 286px;
   font-size: 24px;
   line-height: 1;
-}
+} */
 
 .text {
   font-size: 18px;
