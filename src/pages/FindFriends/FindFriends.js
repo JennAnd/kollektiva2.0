@@ -39,47 +39,61 @@ const FindFriendsPage = (props) => {
             Utöka ditt sociala liv och dra nytta av din bostad genom att hyra ut
             en del av den.
           </p>
-
-          <Button
-            buttonText="Skapa en annons"
-            bg="#6B51EF"
-            color="white"
-            width="396px"
-            height="60px"
-            jc="center"
-          />
+          <div className={styles.createAdvertisementButton}>
+            <Button
+              buttonText="Skapa en annons"
+              bg="#6B51EF"
+              color="white"
+              width="396px"
+              height="60px"
+              jc="center"
+            />
+          </div>
           <img
             className={styles.image}
             src={ManImage}
             alt="image of a man"
           ></img>
           <div className={styles.howTo}>
-            <h3 className={styles.howToHeader}>Hur går det till?</h3>
-            <img src={StepOne} alt="step one svg"></img>
-            <p className={styles.subTitle}>Registrera dig</p>
-            <p className={styles.smallText}>
-              Skapa en profil och verifiera dig, tryggt och säkert.
-            </p>
-            <img src={Line} alt="line"></img>
-            <img src={StepTwo} alt="step two svg"></img>
-            <p className={styles.subTitle}>Skapa en annons</p>
-            <p className={styles.smallText}>
-              Det tar bara 10 minuter och vår kundtjänst finns alltid till
-              hjälp.
-            </p>
-            <img src={Line} alt="line"></img>
-            <img src={StepThree} alt="step three svg"></img>
-            <p className={styles.subTitle}>Hitta en hyresgäst</p>
-            <p className={styles.smallText}>
-              Välj själv bland flera seriösa sökande. Kollektiva ser till att
-              alla känner sig bekväma.
-            </p>
-            <img src={Line} alt="line"></img>
-            <img src={Star} alt="yellow star"></img>
-            <p className={styles.subTitle}>Börja leva ihop</p>
-            <p className={styles.smallText}>
-              Upptäck nya saker genom att dela boenden med någon ny!
-            </p>
+            <h4 className={styles.howToHeader}>Hur går det till?</h4>
+            <div className={styles.howToWrapper}>
+              <div className={styles.howToPartWrapper}>
+                <img src={StepOne} alt="step one svg"></img>
+                <p className={styles.subTitle}>Registrera dig</p>
+                <p className={styles.smallText}>
+                  Skapa en profil och verifiera dig, tryggt och säkert.
+                </p>
+                <img className={styles.line} src={Line} alt="line"></img>
+              </div>
+
+              <div className={styles.howToPartWrapper}>
+                <img src={StepTwo} alt="step two svg"></img>
+                <p className={styles.subTitle}>Skapa en annons</p>
+                <p className={styles.smallText}>
+                  Det tar bara 10 minuter och vår kundtjänst finns alltid till
+                  hjälp.
+                </p>
+                <img className={styles.line} src={Line} alt="line"></img>
+              </div>
+
+              <div className={styles.howToPartWrapper}>
+                <img src={StepThree} alt="step three svg"></img>
+                <p className={styles.subTitle}>Hitta en hyresgäst</p>
+                <p className={styles.smallText}>
+                  Välj själv bland flera seriösa sökande. Kollektiva ser till
+                  att alla känner sig bekväma.
+                </p>
+                <img className={styles.line} src={Line} alt="line"></img>
+              </div>
+
+              <div className={styles.howToPartWrapper}>
+                <img src={Star} alt="yellow star"></img>
+                <p className={styles.subTitle}>Börja leva ihop</p>
+                <p className={styles.smallText}>
+                  Upptäck nya saker genom att dela boenden med någon ny!
+                </p>
+              </div>
+            </div>
           </div>
           <img
             className={styles.imageWoman}
@@ -89,32 +103,44 @@ const FindFriendsPage = (props) => {
           <h2 className={styles.processHeader}>
             Vi hjälper dig genom hela processen
           </h2>
-          <img
-            className={styles.smallCheckmark}
-            src={SmallCheckmark}
-            alt="small round checkmark"
-          ></img>
-          <p className={styles.checkmarkText}>Skapa annons</p>
-          <img
-            className={styles.smallCheckmark}
-            src={SmallCheckmark}
-            alt="small round checkmark"
-          ></img>
-          <p className={styles.checkmarkText}>Ta kontakt med hyresgäster</p>
-          <img
-            className={styles.smallCheckmark}
-            src={SmallCheckmark}
-            alt="small round checkmark"
-          ></img>
-          <p className={styles.checkmarkText}>Skriva på kontrakt</p>
-          <Button
-            buttonText="Läs mer om hur du kontaktar oss"
-            bg="#6B51EF"
-            color="white"
-            width="320px"
-            height="60px"
-            jc="center"
-          />
+          <div className={styles.checkWrapper}>
+            <div className={styles.checkPartWrapper}>
+              <img
+                className={styles.smallCheckmark}
+                src={SmallCheckmark}
+                alt="small round checkmark"
+              ></img>
+              <p className={styles.checkmarkText}>Skapa annons</p>
+            </div>
+            <div className={styles.checkPartWrapper}>
+              <img
+                className={styles.smallCheckmark}
+                src={SmallCheckmark}
+                alt="small round checkmark"
+              ></img>
+              <p className={styles.checkmarkText}>Ta kontakt med hyresgäster</p>
+            </div>
+            <div className={styles.checkPartWrapper}>
+              <img
+                className={styles.smallCheckmark}
+                src={SmallCheckmark}
+                alt="small round checkmark"
+              ></img>
+              <p className={styles.checkmarkText}>Skriva på kontrakt</p>
+            </div>
+          </div>
+          <div className={styles.contactInfoButton}>
+            <Button
+              buttonText="Läs mer om hur du kontaktar oss"
+              bg="#6B51EF"
+              color="white"
+              width="320px"
+              height="60px"
+              jc="center"
+              fontSize="18px"
+              padding="1px"
+            />
+          </div>
         </div>
       </div>
       <MenuButton onClick={() => setButtonMenu(true)} />
