@@ -5,8 +5,14 @@ import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import SupportButton from "../../components/SupportButton/SupportButton";
 import InfoBox from "../../components/InfoBox/InfoBox";
+import Camera from "../../assets/images/camera.svg";
+import UpLoad from "../../assets/images/upLoad.svg";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
+import SofaLivingroom from "../../assets/images/sofa-livingroom.png";
+import YellowHouse from "../../assets/images/yellow-house.png";
+import Things from "../../assets/images/things.png";
+import Bedroom from "../../assets/images/bedroom.png";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";
 import MenuButton from "../../components/MenuButton/MenuButton";
@@ -46,19 +52,39 @@ const UploadPhotosPage = (props) => {
             <Button
               buttonText="Ladda upp"
               bg="white"
-              border="2px solid #000000"
+              color="#3A0067"
+              border="4px solid #6B51EF"
+              jc="space-between"
+              icon={UpLoad}
+              flexDirection="row-reverse"
             />
             <Button
               buttonText="Ta en bild"
               bg="white"
-              border="2px solid #000000"
+              color="#3A0067"
+              border="4px solid #6B51EF"
+              jc="space-between"
+              icon={Camera}
+              flexDirection="row-reverse"
             />
           </div>
           <div className={styles.photoWrapper}>
-            <img />
-            <img />
-            <img />
-            <img />
+            <div className={styles.photoTop}>
+              <img
+                className={styles.imgRoom}
+                src={YellowHouse}
+                alt="A yellow house"
+              ></img>
+              <img
+                className={styles.imgRoom}
+                src={SofaLivingroom}
+                alt="a white sofa in a living room"
+              ></img>
+            </div>
+            <div className={styles.photoBottom}>
+              <img className={styles.imgRoom} src={Things} alt="things"></img>
+              <img className={styles.imgRoom} src={Bedroom} alt="bedroom"></img>
+            </div>
           </div>
           <div className={styles.secondInfoBox}>
             <InfoBox
