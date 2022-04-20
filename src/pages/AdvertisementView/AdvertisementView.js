@@ -4,7 +4,7 @@ import styles from "./AdvertisementView.module.css";
 import Button from "../../components/Button/Button";
 import ContinueClose from "../../assets/images/continue-closed.svg";
 import Wifi from "../../assets/images/wifi.svg";
-import Bedroom from "../../assets/images/bedroom.svg";
+import BigBedroom from "../../assets/images/big-bedroom.png";
 import Customer from "../../assets/images/customer.png";
 import SupportButton from "../../components/SupportButton/SupportButton";
 import Paw from "../../assets/images/paw.svg";
@@ -55,168 +55,176 @@ const AdvertisementViewPage = (props) => {
           </p>
           <p className={styles.publishDate}>Publicerad 7 april</p>
           <h2 className={styles.subTitle}>Ljust rum i fin stuga vid skogen</h2>
-          <img src={Bedroom} alt="bedroom" />
+          <img src={BigBedroom} alt="bedroom" />
           <div className={styles.addressWrapper}>
-          <h3 className={styles.addressText}>Hövägen</h3>
-          <p className={styles.addressSmallText}>Älvängen</p>
+            <h3 className={styles.addressText}>Hövägen</h3>
+            <p className={styles.addressSmallText}>Älvängen</p>
           </div>
           <div className={styles.customerWrapper}>
             <img src={Customer} alt="man with hat" />
             <div className={styles.customer}>
-            <p className={styles.customerName}>Al Morgon</p>
-            <p className={styles.customerText}>Hyresvärd</p>
+              <p className={styles.customerName}>Al Morgon</p>
+              <p className={styles.customerText}>Hyresvärd</p>
             </div>
-            <Button 
-            buttonText="Kontakta värden"
-            ></Button>
-            </div>
-            <div className={styles.summary}>
-          <p className={styles.boldText}>Om boendet</p>
-          <p className={styles.summaryText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum.
-          </p>
-          <p className={styles.summaryText}>
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos, ac not aliquet odio mattis.
-          </p>
+            <Button buttonText="Kontakta värden"></Button>
+          </div>
+          <div className={styles.summary}>
+            <p className={styles.boldText}>Om boendet</p>
+            <p className={styles.summaryText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum.
+            </p>
+            <p className={styles.summaryText}>
+              Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos, ac not aliquet odio mattis.
+            </p>
           </div>
           <div className={styles.time}>
             <p className={styles.boldText}>Tidsperiod</p>
             <p className={styles.textDate}>18-05-2022 - 18-11-2022</p>
-            </div>
-            <div className={styles.rentalInfoWrapper}>
+          </div>
+          <div className={styles.rentalInfoWrapper}>
             <div className={styles.rentalWrapper}>
-            <div className={styles.rentalInfo}>
-            <p className={styles.boldText}>Rum</p>
-            <p className={styles.text}>1</p>
-            </div>
-            <div className={styles.rentalInfo}>
-            <p className={styles.boldText}>Hyresgäst antal</p>
-            <p className={styles.text}>1</p>
-            </div>
-            <div className={styles.rentalInfo}>
-            <p className={styles.boldText}>Hyra</p>
-            <p className={styles.text}>4 540 kr/månaden</p>
-            </div>
+              <div className={styles.rentalInfo}>
+                <p className={styles.boldText}>Rum</p>
+                <p className={styles.text}>1</p>
+              </div>
+              <div className={styles.rentalInfo}>
+                <p className={styles.boldText}>Hyresgäst antal</p>
+                <p className={styles.text}>1</p>
+              </div>
+              <div className={styles.rentalInfo}>
+                <p className={styles.boldText}>Hyra</p>
+                <p className={styles.text}>4 540 kr/månaden</p>
+              </div>
             </div>
             <div className={styles.rentalWrapper}>
-            <div className={styles.rentalInfo}>
-            <p className={styles.boldText}>Egen yta (rum)</p>
-            <p className={styles.text}>16 m&sup2;</p>
+              <div className={styles.rentalInfo}>
+                <p className={styles.boldText}>Egen yta (rum)</p>
+                <p className={styles.text}>16 m&sup2;</p>
+              </div>
+              <div className={styles.rentalInfo}>
+                <p className={styles.boldText}>Bostadstyp</p>
+                <p className={styles.text}>Hus</p>
+              </div>
+              <div className={styles.rentalInfo}>
+                <p className={styles.boldText}>Boendeform</p>
+                <p className={styles.text}>Villa eller äganderätt</p>
+              </div>
             </div>
-            <div className={styles.rentalInfo}>
-            <p className={styles.boldText}>Bostadstyp</p>
-            <p className={styles.text}>Hus</p>
-            </div>
-            <div className={styles.rentalInfo}>
-            <p className={styles.boldText}>Boendeform</p>
-            <p className={styles.text}>Villa eller äganderätt</p>
-            </div>
-            </div>
-            </div>
-            <div className={styles.Info}>
+          </div>
+          <div className={styles.Info}>
             <p className={styles.boldText}>Fakta och facilitet</p>
             <div className={styles.infoWrapper}>
-            <div className={styles.leftImgText}>
-            <div className={styles.imgText}>
-            <img src={Wifi} alt="wifi" />
-            <p className={styles.text}>Tillgängligt Wifi</p>
+              <div className={styles.leftImgText}>
+                <div className={styles.imgText}>
+                  <img src={Wifi} alt="wifi" />
+                  <p className={styles.text}>Tillgängligt Wifi</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img src={Wheelchair} alt="wheelchair" />
+                  <p className={styles.text}>Rullstolsanpassad</p>
+                </div>
+              </div>
+              <div className={styles.rightImgText}>
+                <div className={styles.imgText}>
+                  <img src={Paw} alt="paw" />
+                  <p className={styles.text}>Husdjur tillåtet</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img src={Garage} alt="Garage" />
+                  <p className={styles.text}>Garage</p>
+                </div>
+              </div>
             </div>
-            <div className={styles.imgText}>
-            <img src={Wheelchair} alt="wheelchair" />
-            <p className={styles.text}>Rullstolsanpassad</p>
-            </div>
-            </div>
-            <div className={styles.rightImgText}>
-            <div className={styles.imgText}>
-            <img src={Paw} alt="paw" />
-            <p className={styles.text}>Husdjur tillåtet</p>
-            </div>
-            <div className={styles.imgText}>
-            <img src={Garage} alt="Garage" />
-            <p className={styles.text}>Garage</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            <div className={styles.Info}>
+          </div>
+          <div className={styles.Info}>
             <p className={styles.boldText}>Tillgängligt i badrum</p>
             <div className={styles.infoWrapper}>
-            <div className={styles.leftImgText}>
-            <div className={styles.imgText}>
-            <img src={Shower} alt="shower" />
-            <p className={styles.text}>Dusch</p>
+              <div className={styles.leftImgText}>
+                <div className={styles.imgText}>
+                  <img src={Shower} alt="shower" />
+                  <p className={styles.text}>Dusch</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img src={Dryer} alt="dryer" />
+                  <p className={styles.text}>Torktumlare</p>
+                </div>
+              </div>
+              <div className={styles.rightImgText}>
+                <div className={styles.imgText}>
+                  <img src={WashingMachine} alt="washing machine" />
+                  <p className={styles.text}>Tvättmaskin</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img src={Toilet} alt="Toilet" />
+                  <p className={styles.text}>Toalett</p>
+                </div>
+              </div>
             </div>
-            <div className={styles.imgText}>
-            <img src={Dryer} alt="dryer" />
-            <p className={styles.text}>Torktumlare</p>
-            </div>
-            </div>
-            <div className={styles.rightImgText}>
-            <div className={styles.imgText}>
-            <img src={WashingMachine} alt="washing machine" />
-            <p className={styles.text}>Tvättmaskin</p>
-            </div>
-            <div className={styles.imgText}>
-            <img src={Toilet} alt="Toilet" />
-            <p className={styles.text}>Toalett</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            <div className={styles.Info}>
+          </div>
+          <div className={styles.Info}>
             <p className={styles.boldText}>Tillgängligt i kök</p>
             <div className={styles.infoWrapper}>
-            <div className={styles.leftImgText}>
-            <div className={styles.imgText}>
-            <img src={Microwave} alt="microwave" />
-            <p className={styles.text}>Mikrovågsugn</p>
+              <div className={styles.leftImgText}>
+                <div className={styles.imgText}>
+                  <img src={Microwave} alt="microwave" />
+                  <p className={styles.text}>Mikrovågsugn</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img src={WaterBoiler} alt="water boiler" />
+                  <p className={styles.text}>Vattenkokare</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img src={FridgeBottom} alt="fridge bottom" />
+                  <p className={styles.text}>Frys</p>
+                </div>
+              </div>
+              <div className={styles.rightImgText}>
+                <div className={styles.imgText}>
+                  <img src={Stove} alt="stove" />
+                  <p className={styles.text}>Ugn och spis</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img src={Fridge} alt="fridge" />
+                  <p className={styles.text}>Kyl</p>
+                </div>
+                <div className={styles.imgText}>
+                  <img
+                    src={CoffeeMaker}
+                    alt="C
+            coffee maker"
+                  />
+                  <p className={styles.text}>Kaffebryggare</p>
+                </div>
+              </div>
             </div>
-            <div className={styles.imgText}>
-            <img src={WaterBoiler} alt="water boiler" />
-            <p className={styles.text}>Vattenkokare</p>
-            </div>
-            <div className={styles.imgText}>
-            <img src={FridgeBottom} alt="fridge bottom" />
-            <p className={styles.text}>Frys</p>
-            </div>
-            </div>
-            <div className={styles.rightImgText}>
-            <div className={styles.imgText}>
-            <img src={Stove} alt="stove" />
-            <p className={styles.text}>Ugn och spis</p>
-            </div>
-            <div className={styles.imgText}>
-            <img src={Fridge} alt="fridge" />
-            <p className={styles.text}>Kyl</p>
-            </div>
-            <div className={styles.imgText}>
-            <img src={CoffeeMaker} alt="C
-            coffee maker" />
-            <p className={styles.text}>Kaffebryggare</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            <div className={styles.Info}>
+          </div>
+          <div className={styles.Info}>
             <p className={styles.boldText}>Tillgängligt utomhus</p>
             <div className={styles.imgText}>
-            <img src={Balcony} alt="balcony" />
-            <p className={styles.text}>Balkong</p>
+              <img src={Balcony} alt="balcony" />
+              <p className={styles.text}>Balkong</p>
             </div>
-            </div>
+          </div>
           <div className={styles.lastPart}>
-          <p className={styles.lastPartText}>
-            Ta det första steget till att göra det här stället till ditt
-            temporära hem.
-          </p>
-         <Button buttonText="Kontakta hyresvärden" width="396px" jc="center">
-         </Button>
+            <p className={styles.lastPartText}>
+              Ta det första steget till att göra det här stället till ditt
+              temporära hem.
+            </p>
+            <Button
+              buttonText="Kontakta hyresvärden"
+              width="396px"
+              jc="center"
+            ></Button>
           </div>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-            <h3 className={styles.titlePopup}>Är du redo att publicera din annons?</h3>
-            <p className={styles.textPopup}>Det går att uppdatera din annons senare via mina sidor.</p>
+            <h3 className={styles.titlePopup}>
+              Är du redo att publicera din annons?
+            </h3>
+            <p className={styles.textPopup}>
+              Det går att uppdatera din annons senare via mina sidor.
+            </p>
             <p className={styles.textPopup}>
               Tveka inte att kontakta oss om du behöver hjälp med din annons.
             </p>
