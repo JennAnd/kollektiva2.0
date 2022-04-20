@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { navigate } from "@reach/router";
 import styles from "./AdvertisementPublish.module.css";
 import Button from "../../components/Button/Button";
 import SmallLogotype from "./../../assets/images/small-logo.svg";

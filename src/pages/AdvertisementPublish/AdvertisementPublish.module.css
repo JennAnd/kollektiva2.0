@@ -23,12 +23,11 @@
 }
 
 .title {
-  width: 361px;
+  width: 396px;
   font-size: 48px;
-  line-height: 1;
+  line-height: 55px;
   font-weight: 700;
-  margin-left: -42px;
-  margin-top: 4px;
+  margin: 15px 0px 64px 0px;
 }
 
 .checkmark {
@@ -37,19 +36,19 @@
 }
 
 .subTitle {
-  width: 361px;
+  width: 396px;
   font-size: 32px;
-  line-height: 1;
-  font-weight: 600;
-  margin-left: -32px;
-  margin-bottom: -8px;
+  line-height: 38px;
+  font-weight: 700;
+  margin: 64px 0px 8px 0px;
 }
 
 .text {
-  margin-right: 6px;
-  margin-left: 2px;
-  margin-bottom: 38px;
+  width: 396px;
   font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 0px 0px 32px 0px;
 }
 
 .viewMyPages {
