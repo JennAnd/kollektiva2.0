@@ -250,7 +250,7 @@ const AdvertisementViewPage = (props) => {
             ></Button>
             <Button
               onClick={() => setButtonPopup(true)}
-              buttonText="Pubilcera"
+              buttonText="Publicera"
               icon={ArrowRight}
               altText={"arrow right"}
               flexDirection="row-reverse"
