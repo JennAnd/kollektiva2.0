@@ -1,7 +1,7 @@
 .supportBtn {
   width: 110px;
   height: 60px;
-  background-color: #00c108;
+  background-color: #95e999;
   border: none;
   border-radius: 8px;
   line-height: 24px;
@@ -10,7 +10,7 @@
   font-size: 18px;
   font-family: "Nunito Sans";
   cursor: pointer;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
