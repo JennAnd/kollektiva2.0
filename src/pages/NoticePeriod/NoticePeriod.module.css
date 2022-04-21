@@ -64,6 +64,11 @@
   margin: 0px 0px 22px 0px;
 }
 
+.infoBox {
+  margin-bottom: 120px;
+  margin-top: 20px;
+}
+
 .pageNavigation {
   width: 396px;
   display: flex;

@@ -89,12 +89,14 @@
 .infoBox {
   display: flex;
   position: relative;
+  margin-bottom: 195px;
+  margin-top: 20px;
 }
 
 .flexButton {
   display: flex;
   position: absolute;
-  margin-top: 206px;
+  margin-top: 20px;
   margin-left: 184px;
 }
 

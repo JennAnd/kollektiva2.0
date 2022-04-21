@@ -84,6 +84,11 @@ textarea {
   margin: 8px 0px 16px 0px;
 }
 
+.infoBox {
+  margin-bottom: 118px;
+  margin-top: 20px;
+}
+
 .biggerTextarea {
   border-radius: 8px;
   border: 2px solid black;

@@ -39,13 +39,13 @@ const OutsidePage = (props) => {
             <RadioButton id="outside" value="Trädgård"></RadioButton>
             <RadioButton id="outside" value="Altan"></RadioButton>
           </form>
-
-          <InfoBox
-            text="Du kan kryssa i flera alternativ här."
-            height="56px"
-            paddingRight="88px"
-          ></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox
+              text="Du kan kryssa i flera alternativ här."
+              height="56px"
+              paddingRight="88px"
+            ></InfoBox>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/kitchen")}

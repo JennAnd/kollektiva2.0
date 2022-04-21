@@ -41,14 +41,14 @@ const NoticePeriodPage = (props) => {
             <RadioButton id="noticePeriod" value="1 månad"></RadioButton>
             <RadioButton id="noticePeriod" value="3 månader"></RadioButton>
           </form>
-
-          <InfoBox
-            text="För längre uthyrning rekommenderar vi 3 månaders uppsägningstid."
-            height="64px"
-            gap="16px"
-            paddingRight="44px"
-          ></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox
+              text="För längre uthyrning rekommenderar vi 3 månaders uppsägningstid."
+              height="64px"
+              gap="16px"
+              paddingRight="44px"
+            ></InfoBox>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/rental-timeline")}

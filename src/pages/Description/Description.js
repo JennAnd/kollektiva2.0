@@ -48,14 +48,14 @@ const DescriptionPage = (props) => {
             </label>
             <textarea id="description" className={styles.biggerTextarea} />
           </form>
-
-          <InfoBox
-            text="Berätta gärna lite om dig som hyresvärd och vad du söker i en hyresgäst."
-            height="64px"
-            gap="16px"
-            paddingRight="20px"
-          ></InfoBox>
-
+          <div className={styles.infoBox}>
+            <InfoBox
+              text="Berätta gärna lite om dig som hyresvärd och vad du söker i en hyresgäst."
+              height="64px"
+              gap="16px"
+              paddingRight="20px"
+            ></InfoBox>
+          </div>
           <div className={styles.pageNavigation}>
             <Button
               onClick={() => navigate("/outside")}
