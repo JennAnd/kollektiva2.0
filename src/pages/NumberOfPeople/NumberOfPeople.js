@@ -55,6 +55,7 @@ const NumberOfPeoplePage = (props) => {
             <Button
               onClick={() => navigate("/rental-size")}
               icon={ArrowLeft}
+              altText={"arrow left"}
               bg="white"
               border="4px solid #3A0067"
               color="#3A0067"
@@ -65,6 +66,7 @@ const NumberOfPeoplePage = (props) => {
               onClick={() => navigate("/rental-timeline")}
               buttonText="Fortsätt"
               icon={ArrowRight}
+              altText={"arrow right"}
               flexDirection="row-reverse"
             ></Button>
           </div>

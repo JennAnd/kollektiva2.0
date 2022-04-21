@@ -62,6 +62,7 @@ const FactsAndFacilitiesPage = (props) => {
             <Button
               onClick={() => navigate("/upload-photos")}
               icon={ArrowLeft}
+              altText={"arrow left"}
               bg="white"
               border="4px solid #3A0067"
               color="#3A0067"
@@ -72,6 +73,7 @@ const FactsAndFacilitiesPage = (props) => {
               onClick={() => navigate("/bathroom")}
               buttonText="Fortsätt"
               icon={ArrowRight}
+              altText={"arrow right"}
               flexDirection="row-reverse"
             ></Button>
           </div>

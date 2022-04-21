@@ -60,6 +60,7 @@ const DescriptionPage = (props) => {
             <Button
               onClick={() => navigate("/outside")}
               icon={ArrowLeft}
+              altText={"arrow left"}
               bg="white"
               border="4px solid #3A0067"
               color="#3A0067"
@@ -70,6 +71,7 @@ const DescriptionPage = (props) => {
               onClick={() => navigate("/advertisement-view")}
               buttonText="Fortsätt"
               icon={ArrowRight}
+              altText={"arrow right"}
               flexDirection="row-reverse"
             ></Button>
           </div>

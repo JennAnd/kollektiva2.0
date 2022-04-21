@@ -48,6 +48,7 @@ Button.propTypes = {
   width: PropTypes.string,
   jc: PropTypes.string,
   icon: PropTypes.string,
+  altText: PropTypes.string,
   fontSize: PropTypes.string,
   padding: PropTypes.string,
   height: PropTypes.string,

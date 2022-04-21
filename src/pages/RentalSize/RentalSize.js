@@ -82,6 +82,7 @@ const RentalSizePage = (props) => {
             <Button
               onClick={() => navigate("/form-of-housing")}
               icon={ArrowLeft}
+              altText={"arrow left"}
               bg="white"
               border="4px solid #3A0067"
               color="#3A0067"
@@ -92,6 +93,7 @@ const RentalSizePage = (props) => {
               onClick={() => navigate("/number-of-people")}
               buttonText="Fortsätt"
               icon={ArrowRight}
+              altText={"arrow left"}
               flexDirection="row-reverse"
             ></Button>
           </div>

@@ -241,6 +241,7 @@ const AdvertisementViewPage = (props) => {
             <Button
               onClick={() => navigate("/description")}
               icon={ArrowLeft}
+              altText={"arrow left"}
               bg="white"
               border="4px solid #3A0067"
               color="#3A0067"
@@ -251,6 +252,7 @@ const AdvertisementViewPage = (props) => {
               onClick={() => setButtonPopup(true)}
               buttonText="Pubilcera"
               icon={ArrowRight}
+              altText={"arrow right"}
               flexDirection="row-reverse"
             ></Button>
           </div>

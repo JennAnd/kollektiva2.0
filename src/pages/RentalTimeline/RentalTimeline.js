@@ -78,6 +78,7 @@ const RentalTimelinePage = () => {
             <Button
               onClick={() => navigate("/number-of-people")}
               icon={ArrowLeft}
+              altText={"arrow left"}
               bg="white"
               border="4px solid #3A0067"
               color="#3A0067"
@@ -88,6 +89,7 @@ const RentalTimelinePage = () => {
               onClick={() => navigate("/notice-period")}
               buttonText="Fortsätt"
               icon={ArrowRight}
+              altText={"arrow right"}
               flexDirection="row-reverse"
             ></Button>
           </div>

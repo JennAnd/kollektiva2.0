@@ -54,6 +54,7 @@ const BathroomPage = (props) => {
             <Button
               onClick={() => navigate("/facts-and-facilities")}
               icon={ArrowLeft}
+              altText={"arrow left"}
               bg="white"
               border="4px solid #3A0067"
               color="#3A0067"
@@ -64,6 +65,7 @@ const BathroomPage = (props) => {
               onClick={() => navigate("/kitchen")}
               buttonText="Fortsätt"
               icon={ArrowRight}
+              altText={"arrow right"}
               flexDirection="row-reverse"
             ></Button>
           </div>
