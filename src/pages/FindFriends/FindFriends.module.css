@@ -42,13 +42,11 @@
 }
 
 .title {
-  top: 172px;
-  width: 381px;
+  width: 396px;
   font-size: 48px;
-  font-weight: 700;
   line-height: 55px;
-  margin-right: 20px;
-  margin-bottom: 18px;
+  font-weight: 700;
+  margin: 14px 0px 8px 0px;
 }
 
 .image {
@@ -103,18 +101,11 @@
 
 .text {
   font-size: 20px;
-  font-weight: 600;
-  width: 365px;
-  margin-left: 12px;
-  margin-bottom: 40px;
   line-height: 26px;
-  margin-right: 42px;
-  margin-top: 2px;
-  margin-bottom: 26px;
+  font-weight: 600;
+  width: 396px;
+  margin: 0px 0px 22px 0px;
 }
-
-/* .createAdvertisementButton {
-} */
 
 .processHeader {
   width: 412 px;

@@ -52,17 +52,18 @@
 }
 
 .title {
-  width: 381px;
+  width: 396px;
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
-  margin: 16px 14px 10px 0px;
+  margin: 14px 0px 8px 0px;
 }
 
 .text {
   font-size: 18px;
-  margin: -6px 74px 12px 0px;
-  line-height: 40px;
+  line-height: 23px;
+  width: 396px;
+  margin: 0px 0px 22px 0px;
 }
 .textDatePicker {
   font-size: 20px;
@@ -97,7 +98,7 @@
 }
 
 .pageNavigation {
-  width: 408px;
+  width: 396px;
   display: flex;
   justify-content: space-between;
   margin-top: 65px;

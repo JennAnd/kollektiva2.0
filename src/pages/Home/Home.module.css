@@ -38,22 +38,19 @@
 }
 
 .title {
-  /* width: 341px; */
+  width: 396px;
   font-size: 48px;
-  font-weight: 800;
   line-height: 55px;
-  margin-left: 16px;
-  top: 32px;
+  font-weight: 700;
+  margin: 46px 0px 8px 0px;
 }
 
 .text {
   font-size: 20px;
-  margin-top: -26px;
-  font-weight: 500;
   line-height: 26px;
-  /* width: 311px; */
-  margin-left: 16px;
-  margin-bottom: 24px;
+  font-weight: 600;
+  width: 396px;
+  margin: 0px 0px 22px 0px;
 }
 
 .card {

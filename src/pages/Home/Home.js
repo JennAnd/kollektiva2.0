@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { navigate } from "@reach/router";
 import styles from "./Home.module.css";
 import MediumLogo from "./../../assets/images/medium-logo.svg";
-/* import Button from "../../components/Button"; */
 import Card from "../../components/Card/Card";
-import houseRoof from "./../../assets/images/house-roof.png";
-import Logotype from "./../../assets/images/logotype.svg";
 import Language from "./../../assets/images/language.svg";
 import Footer from "../../components/Footer/Footer";
 import Menu from "../../components/Menu/Menu";

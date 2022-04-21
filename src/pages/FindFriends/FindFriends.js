@@ -41,6 +41,7 @@ const FindFriendsPage = (props) => {
           </p>
           <div className={styles.createAdvertisementButton}>
             <Button
+              onClick={() => navigate("/rental-address")}
               buttonText="Skapa en annons"
               bg="#6B51EF"
               color="white"

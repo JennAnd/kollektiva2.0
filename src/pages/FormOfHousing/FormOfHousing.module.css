@@ -46,30 +46,28 @@
   border-bottom: 3px solid #6b51ef;
   border-radius: 2px;
   width: 96px;
-  margin-bottom: 13px;
 }
 
 .title {
-  width: 361px;
+  width: 396px;
   font-size: 32px;
-  line-height: 1;
-  font-weight: 800;
-  margin-left: -35px;
-  margin-top: 4px;
-  margin-bottom: -8px;
+  line-height: 38px;
+  font-weight: 700;
+  margin: 14px 0px 8px 0px;
 }
 
 .text {
   font-size: 18px;
+  line-height: 23px;
   width: 396px;
-  margin-bottom: 22px;
+  margin: 0px 0px 22px 0px;
 }
 
 .infoBox {
   margin-bottom: 150px;
 }
 .pageNavigation {
-  width: 408px;
+  width: 396px;
   display: flex;
   justify-content: space-between;
   margin-top: 65px;

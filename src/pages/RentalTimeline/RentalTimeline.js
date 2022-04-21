@@ -92,9 +92,9 @@ const RentalTimelinePage = () => {
             ></Button>
           </div>
         </div>
-        <MenuButton onClick={() => setButtonMenu(true)} />
-        <Menu open={buttonMenu} setOpen={setButtonMenu} />
       </div>
+      <MenuButton onClick={() => setButtonMenu(true)} />
+      <Menu open={buttonMenu} setOpen={setButtonMenu} />
       <Footer />
     </div>
   );

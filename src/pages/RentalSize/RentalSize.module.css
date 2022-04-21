@@ -51,17 +51,18 @@
 }
 
 .title {
-  width: 361px;
+  width: 396px;
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
-  margin: 0px 0px 8px -34px;
+  margin: 14px 0px 8px 0px;
 }
 
 .text {
   font-size: 18px;
-  line-height: 21px;
-  margin: 0px 16px 20px 0px;
+  line-height: 23px;
+  width: 396px;
+  margin: 0px 0px 22px 0px;
 }
 
 .label {
@@ -95,7 +96,7 @@
 .select {
   border-radius: 8px 0px 0px 8px;
   border: 2px solid black;
-  width: 369px;
+  width: 303px;
   height: 58px;
   padding-left: 18px;
 }
@@ -105,18 +106,13 @@
   margin-top: 10px;
 }
 
-/* .infoBox {
-  margin-bottom: 190px;
-  margin-top: 10px;
-} */
-
 .selectForm {
   display: flex;
   flex-direction: row;
 }
 
 .pageNavigation {
-  width: 460px;
+  width: 396px;
   display: flex;
   justify-content: space-between;
   margin-top: 65px;
